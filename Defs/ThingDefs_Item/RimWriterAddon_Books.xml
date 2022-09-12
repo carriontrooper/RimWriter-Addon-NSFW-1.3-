@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="Jecrell_Book">
+    <defName>RimWriter_Hentai</defName>
+    <label>hentai book</label>
+    <description>A collection of lewd sequential art.</description>
+    <graphicData>
+      <texPath>Item/Resource/Journal/RimWriterHentai</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <onGroundRandomRotateAngle>15</onGroundRandomRotateAngle>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>RimWriterNamerHentai</nameMaker>
+        <descriptionMaker>RimWriterArtDescription_Hentai</descriptionMaker>
+      </li>
+    </comps>
+	<tradeTags>
+      <li>ExoticMisc</li>
+      <li>Books</li>
+    </tradeTags>
+	<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>50</weight>
+					<only>(255,255,255,255)</only>
+				</li>
+			</options>
+	</colorGenerator>
+  </ThingDef>
+  
+  <ThingDef ParentName="Jecrell_Book">
+    <defName>RimWriter_Comic</defName>
+    <label>comic book</label>
+    <description>A collection of sequential art.</description>
+    <graphicData>
+      <texPath>Item/Resource/Journal/RimWriterComic</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <onGroundRandomRotateAngle>15</onGroundRandomRotateAngle>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>RimWriterNamerComic</nameMaker>
+        <descriptionMaker>RimWriterArtDescription_Comic</descriptionMaker>
+      </li>
+    </comps>
+	<tradeTags>
+      <li>ExoticMisc</li>
+      <li>Books</li>
+    </tradeTags>
+	<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>50</weight>
+					<only>(255,255,255,255)</only>
+				</li>
+			</options>
+	</colorGenerator>
+  </ThingDef>
+  
+  <ThingDef ParentName="Jecrell_Book">
+    <defName>RimWriter_Fantasy</defName>
+    <label>fantasy novel</label>
+    <description>A fantastical book full of epic deeds and adventure.</description>
+    <graphicData>
+      <texPath>Item/Resource/Journal/RimWriterFantasy</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <onGroundRandomRotateAngle>15</onGroundRandomRotateAngle>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>RimWriterNamerFantasy</nameMaker>
+        <descriptionMaker>RimWriterArtDescription_Fantasy</descriptionMaker>
+      </li>
+    </comps>
+	<tradeTags>
+      <li>ExoticMisc</li>
+      <li>Books</li>
+    </tradeTags>
+	<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>50</weight>
+					<only>(255,255,255,255)</only>
+				</li>
+			</options>
+	</colorGenerator>
+  </ThingDef>
+  
+  <ThingDef ParentName="Jecrell_Book">
+    <defName>RimWriter_Mystery</defName>
+    <label>mystery novel</label>
+    <description>A thrilling book full of crime and logic.</description>
+    <graphicData>
+      <texPath>Item/Resource/Journal/RimWriterMystery</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <onGroundRandomRotateAngle>15</onGroundRandomRotateAngle>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>RimWriterNamerMystery</nameMaker>
+        <descriptionMaker>RimWriterArtDescription_Mystery</descriptionMaker>
+      </li>
+    </comps>
+	<tradeTags>
+      <li>ExoticMisc</li>
+      <li>Books</li>
+    </tradeTags>
+	<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>50</weight>
+					<only>(255,255,255,255)</only>
+				</li>
+			</options>
+	</colorGenerator>
+  </ThingDef>
+  
+  <ThingDef ParentName="Jecrell_Book">
+    <defName>RimWriter_Eldritch</defName>
+    <label>eldritch text</label>
+    <description>A tome filled with dread and madness. Possible cult classic.</description>
+    <graphicData>
+      <texPath>Item/Resource/Journal/Jecrell_Book</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <onGroundRandomRotateAngle>15</onGroundRandomRotateAngle>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+    <comps>
+	  <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>RimWriterNamerEldritch</nameMaker>
+        <descriptionMaker>RimWriterArtDescription_Eldritch</descriptionMaker>
+      </li>
+    </comps>
+	<tradeTags>
+      <li>ExoticMisc</li>
+      <li>Books</li>
+    </tradeTags>
+	<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>50</weight>
+					<only>(255,255,255,255)</only>
+				</li>
+			</options>
+	</colorGenerator>
+  </ThingDef>
+  
+  <ThingDef MayRequire="Ludeon.RimWorld.Ideology" ParentName="Jecrell_Book">
+    <defName>RimWriter_EldritchRelic</defName>
+    <label>relic eldritch text</label>
+    <description>A tome filled with dread and madness. Possible cult classic.</description>
+    <graphicData>
+      <texPath>Item/Resource/Journal/Jecrell_Book</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <onGroundRandomRotateAngle>15</onGroundRandomRotateAngle>
+      <drawSize>0.5</drawSize>
+    </graphicData>
+	<relicChance>5</relicChance>
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseArtifact</useJob>
+        <useLabel>Activate</useLabel>
+      </li>
+	  <li Class="CompProperties_Forbiddable"/>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>RimWriterNamerEldritch</nameMaker>
+        <descriptionMaker>RimWriterArtDescription_Eldritch</descriptionMaker>
+      </li>
+    </comps>
+	<colorGenerator Class="ColorGenerator_Options">
+			<options>
+				<li>
+					<weight>50</weight>
+					<only>(255,255,255,255)</only>
+				</li>
+			</options>
+	</colorGenerator>
+  </ThingDef>
+
+</Defs>

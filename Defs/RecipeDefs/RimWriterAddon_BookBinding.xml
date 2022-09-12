@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <RecipeDef ParentName="MakeHentaiByHand" Name="MakeHentaiAtDesk">
+        <defName>RimWriter_MakeHentaiAtTable</defName>
+        <label>draw a hentai at a desk</label>
+        <description>Makes a hentai comic at a writing table by inking out on flattened stationery such as paper or parchment and binding together the pieces.</description>
+        <jobString>Drawing hentai.</jobString>
+        <workAmount>15000</workAmount>
+        <recipeUsers Inherit="False">
+            <li>RimWriter_TableWriting</li>
+        </recipeUsers>
+        <products Inherit="False">
+            <RimWriter_Hentai>1</RimWriter_Hentai>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef Name="MakeHentaiByHand">
+        <defName>RimWriter_MakeHentai</defName>
+        <label>draw a hentai by hand</label>
+        <description>Makes a hentai by hand at a crafting spot by drawing out on flattened stationery such as paper or parchment and binding together the pieces.</description>
+        <jobString>Drawing hentai by hand.</jobString>
+        <workAmount>20000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Artistic</workSkill>
+        <unfinishedThingDef>UnfinishedWriting</unfinishedThingDef>
+        <soundWorking>RimWriter_SoundManualPencil</soundWorking>
+        <effectWorking>Tailor</effectWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <recipeUsers>
+            <li>CraftingSpot</li>
+        </recipeUsers>
+        <products>
+            <RimWriter_Hentai>1</RimWriter_Hentai>
+        </products>
+        <ingredients>
+            <li>
+                <filter>                
+                    <categories>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>RimWriter_BookMaterials</li>
+                    </categories>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>RimWriter_BookMaterials</li>
+                <li>Leathers</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="MakeComicByHand" Name="MakeComicAtDesk">
+        <defName>RimWriter_MakeComicAtTable</defName>
+        <label>draw a comic at a desk</label>
+        <description>Makes a comic at a writing table by inking out on flattened stationery such as paper or parchment and binding together the pieces.</description>
+        <jobString>Drawing comic.</jobString>
+        <workAmount>15000</workAmount>
+        <recipeUsers Inherit="False">
+            <li>RimWriter_TableWriting</li>
+        </recipeUsers>
+        <products Inherit="False">
+            <RimWriter_Comic>1</RimWriter_Comic>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef Name="MakeComicByHand">
+        <defName>RimWriter_MakeComic</defName>
+        <label>draw a comic by hand</label>
+        <description>Makes a comic by hand at a crafting spot by drawing out on flattened stationery such as paper or parchment and binding together the pieces.</description>
+        <jobString>Drawing comic by hand.</jobString>
+        <workAmount>20000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Artistic</workSkill>
+        <unfinishedThingDef>UnfinishedWriting</unfinishedThingDef>
+        <soundWorking>RimWriter_SoundManualPencil</soundWorking>
+        <effectWorking>Tailor</effectWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <recipeUsers>
+            <li>CraftingSpot</li>
+        </recipeUsers>
+        <products>
+            <RimWriter_Comic>1</RimWriter_Comic>
+        </products>
+        <ingredients>
+            <li>
+                <filter>                
+                    <categories>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>RimWriter_BookMaterials</li>
+                    </categories>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>RimWriter_BookMaterials</li>
+                <li>Leathers</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="MakeFantasyNovelAtDesk" Name="MakeFantasyNovelAtTypewriter">
+        <defName>RimWriter_MakeFantasyNovelAtTypewriter</defName>
+        <label>author a fantasy novel at a typewriter</label>
+        <description>Makes a fantasy novel at a typewriter by typing out on flattened stationery such as paper or parchment and binding together the pieces.</description>
+        <soundWorking>RimWriter_SoundManualTypewriter</soundWorking>
+        <jobString>Typing a fantasy novel.</jobString>
+        <workAmount>10000</workAmount>
+        <recipeUsers Inherit="False">
+            <li>RimWriter_TableTypewriter</li>
+        </recipeUsers>
+        <products Inherit="False">
+            <RimWriter_Fantasy>1</RimWriter_Fantasy>
+        </products>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="MakeFantasyNovelByHand" Name="MakeFantasyNovelAtDesk">
+        <defName>RimWriter_MakeFantasyNovelAtTable</defName>
+        <label>write a fantasy novel at a desk</label>
+        <description>Makes a fantasy novel at a writing table by writing on flattened stationery such as paper or parchment and binding together the pieces.</description>
+        <jobString>Writing a fantasy novel.</jobString>
+        <workAmount>15000</workAmount>
+        <recipeUsers Inherit="False">
+            <li>RimWriter_TableWriting</li>
+        </recipeUsers>
+        <products Inherit="False">
+            <RimWriter_Fantasy>1</RimWriter_Fantasy>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef Name="MakeFantasyNovelByHand">
+        <defName>RimWriter_MakeFantasyNovel</defName>
+        <label>write a fantasy novel by hand</label>
+        <description>Makes a fantasy novel by hand at a crafting spot by writing on flattened stationery such as paper or parchment and binding together the pieces.</description>
+        <jobString>Writing a fantasy novel by hand.</jobString>
+        <workAmount>20000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Artistic</workSkill>
+        <unfinishedThingDef>UnfinishedWriting</unfinishedThingDef>
+        <soundWorking>RimWriter_SoundManualPencil</soundWorking>
+        <effectWorking>Tailor</effectWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <recipeUsers>
+            <li>CraftingSpot</li>
+        </recipeUsers>
+        <products>
+            <RimWriter_Fantasy>1</RimWriter_Fantasy>
+        </products>
+        <ingredients>
+            <li>
+                <filter>                
+                    <categories>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>RimWriter_BookMaterials</li>
+                    </categories>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>RimWriter_BookMaterials</li>
+                <li>Leathers</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="MakeMysteryNovelAtDesk" Name="MakeMysteryNovelAtTypewriter">
+        <defName>RimWriter_MakeMysteryNovelAtTypewriter</defName>
+        <label>author a mystery novel at a typewriter</label>
+        <description>Makes a mystery novel at a typewriter by typing out on flattened stationery such as paper or parchment and binding together the pieces.</description>
+        <soundWorking>RimWriter_SoundManualTypewriter</soundWorking>
+        <jobString>Typing a mystery novel.</jobString>
+        <workAmount>10000</workAmount>
+        <recipeUsers Inherit="False">
+            <li>RimWriter_TableTypewriter</li>
+        </recipeUsers>
+        <products Inherit="False">
+            <RimWriter_Mystery>1</RimWriter_Mystery>
+        </products>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="MakeMysteryNovelByHand" Name="MakeMysteryNovelAtDesk">
+        <defName>RimWriter_MakeMysteryNovelAtTable</defName>
+        <label>write a mystery novel at a desk</label>
+        <description>Makes a mystery novel at a writing table by writing on flattened stationery such as paper or parchment and binding together the pieces.</description>
+        <jobString>Writing a mystery novel.</jobString>
+        <workAmount>15000</workAmount>
+        <recipeUsers Inherit="False">
+            <li>RimWriter_TableWriting</li>
+        </recipeUsers>
+        <products Inherit="False">
+            <RimWriter_Mystery>1</RimWriter_Mystery>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef Name="MakeMysteryNovelByHand">
+        <defName>RimWriter_MakeMysteryNovel</defName>
+        <label>draw a mystery novel by hand</label>
+        <description>Makes a mystery novel by hand at a crafting spot by writing on flattened stationery such as paper or parchment and binding together the pieces.</description>
+        <jobString>Writing a mystery novel by hand.</jobString>
+        <workAmount>20000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Artistic</workSkill>
+        <unfinishedThingDef>UnfinishedWriting</unfinishedThingDef>
+        <soundWorking>RimWriter_SoundManualPencil</soundWorking>
+        <effectWorking>Tailor</effectWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <recipeUsers>
+            <li>CraftingSpot</li>
+        </recipeUsers>
+        <products>
+            <RimWriter_Mystery>1</RimWriter_Mystery>
+        </products>
+        <ingredients>
+            <li>
+                <filter>                
+                    <categories>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>RimWriter_BookMaterials</li>
+                    </categories>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>RimWriter_BookMaterials</li>
+                <li>Leathers</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="MakeEldritchTextAtDesk" Name="MakeEldritchTextAtTypewriter">
+        <defName>RimWriter_MakeEldritchTextAtTypewriter</defName>
+        <label>author an eldritch text at a typewriter</label>
+        <description>Makes an eldritch text at a typewriter by typing out on flattened stationery such as paper or parchment and binding together the pieces.</description>
+        <soundWorking>RimWriter_SoundManualTypewriter</soundWorking>
+        <jobString>Typing an eldritch text.</jobString>
+        <workAmount>10000</workAmount>
+        <recipeUsers Inherit="False">
+            <li>RimWriter_TableTypewriter</li>
+        </recipeUsers>
+        <products Inherit="False">
+            <RimWriter_Eldritch>1</RimWriter_Eldritch>
+        </products>
+    </RecipeDef>
+	
+	<RecipeDef ParentName="MakeEldritchTextByHand" Name="MakeEldritchTextAtDesk">
+        <defName>RimWriter_MakeEldritchTextAtTable</defName>
+        <label>write an eldritch text at a desk</label>
+        <description>Makes an eldritch text at a writing table by writing on flattened stationery such as paper or parchment and binding together the pieces.</description>
+        <jobString>Writing an eldritch text.</jobString>
+        <workAmount>15000</workAmount>
+        <recipeUsers Inherit="False">
+            <li>RimWriter_TableWriting</li>
+        </recipeUsers>
+        <products Inherit="False">
+            <RimWriter_Eldritch>1</RimWriter_Eldritch>
+        </products>
+    </RecipeDef>
+
+    <RecipeDef Name="MakeEldritchTextByHand">
+        <defName>RimWriter_MakeEldritchText</defName>
+        <label>draw an eldritch text by hand</label>
+        <description>Makes an eldritch text by hand at a crafting spot by writing on flattened stationery such as paper or parchment and binding together the pieces.</description>
+        <jobString>Writing an eldritch text by hand.</jobString>
+        <workAmount>20000</workAmount>
+        <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+        <workSkill>Artistic</workSkill>
+        <unfinishedThingDef>UnfinishedWriting</unfinishedThingDef>
+        <soundWorking>RimWriter_SoundManualPencil</soundWorking>
+        <effectWorking>Tailor</effectWorking>
+        <allowMixingIngredients>true</allowMixingIngredients>
+        <recipeUsers>
+            <li>CraftingSpot</li>
+        </recipeUsers>
+        <products>
+            <RimWriter_Eldritch>1</RimWriter_Eldritch>
+        </products>
+        <ingredients>
+            <li>
+                <filter>                
+                    <categories>
+                        <li>Leathers</li>
+                    </categories>
+                </filter>
+                <count>10</count>
+            </li>
+            <li>
+                <filter>
+                    <categories>
+                        <li>RimWriter_BookMaterials</li>
+                    </categories>
+                </filter>
+                <count>100</count>
+            </li>
+        </ingredients>
+        <fixedIngredientFilter>
+            <categories>
+                <li>RimWriter_BookMaterials</li>
+                <li>Leathers</li>
+            </categories>
+        </fixedIngredientFilter>
+    </RecipeDef>
+
+</Defs>

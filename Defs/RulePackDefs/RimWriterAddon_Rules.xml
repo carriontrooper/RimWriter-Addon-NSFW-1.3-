@@ -1,0 +1,1595 @@
+<Defs>
+
+  <RulePackDef>
+		<defName>VME_NamerDeityEldritch</defName>
+		<include>
+			<li>GlobalUtility</li>
+		</include>
+		<rulePack>
+			<rulesStrings>
+				<li>VME_eldritchdeityName->[start][middle][end]</li>
+				<li>start->cn</li>
+				<li>start->kt</li>
+				<li>start->c't</li>
+				<li>start->kh</li>
+				<li>start->yir</li>
+				<li>start->yor</li>
+				<li>start->yok</li>
+				<li>start->igh</li>
+				<li>start->vhal</li>
+				<li>start->gher</li>
+				<li>start->mh'ur</li>
+				<li>start->vh'or</li>
+				<li>start->og</li>
+				<li>start->ak</li>
+				<li>start->kol</li>
+				<li>start->okt</li>
+				<li>start->yom-</li>
+				<li>start->sub-</li>
+				<li>start->ed</li>
+				<li>start->ith</li>
+				<!-- Middle is always surrounded by vowels -->
+				<li>middle->all'ra</li>
+				<li>middle->hele</li>
+				<li>middle->ujhu</li>
+				<li>middle->aand'xu</li>
+				<li>middle->'og'vhe</li>
+				<li>middle->aathe</li>
+				<li>middle->omliggda</li>
+				<li>middle->ethla</li>
+				<li>middle->ouvha</li>
+				<li>middle->omlao</li>
+				<!-- Ends never begin with vowels -->
+				<li>end(p=4)-></li>
+				<li>end->tl</li>
+				<li>end->ss</li>
+				<li>end->xr</li>
+				<li>end->rc</li>
+				<li>end->sh</li>
+				<li>end->l</li>
+				<li>end->va</li>
+				<li>end->rrath</li>
+				<li>end->th</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>VME_DietyTypeMakerEldritch</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>VME_eldritchdeityType->Progenitor of [concept]</li>
+				<li>VME_eldritchdeityType->Corruptor of [concept]</li>
+				<li>VME_eldritchdeityType->Bane of [concept]</li>
+				<li>VME_eldritchdeityType->Enemy of [concept]</li>
+				<li>VME_eldritchdeityType->Devourer of [concept]</li>
+				<li>VME_eldritchdeityType->Scourge of [concept]</li>
+				<li>VME_eldritchdeityType->The incomprehensible [concept]</li>
+				<li>VME_eldritchdeityType->The noise at the center of [concept]</li>
+				<li>VME_eldritchdeityType->The [concept2] out of [concept3]</li>
+				<li>concept->everything</li>
+				<li>concept->all</li>
+				<li>concept->the universe</li>
+				<li>concept->stars</li>
+				<li>concept->souls</li>
+				<li>concept->humanity</li>
+				<li>concept->space</li>
+				<li>concept->our dreams</li>
+				<li>concept->our deepest fears</li>
+				<li>concept2->colour</li>
+				<li>concept2->thousand goats</li>
+				<li>concept2->hunger</li>
+				<li>concept2->scintillation</li>
+				<li>concept2->inkbloat</li>
+				<li>concept2->madness</li>
+				<li>concept2->insanity</li>
+				<li>concept3->space</li>
+				<li>concept3->the depths</li>
+				<li>concept3->the chthonian abyss</li>
+				<li>concept3->hades</li>
+				<li>concept3->our nightmares</li>
+				<li>concept3->our dreams</li>
+				<li>concept3->our deepest fears</li>
+			</rulesStrings>
+		</rulePack>
+	</RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterAddonNameUtility</defName>
+    <rulePack>
+      <rulesFiles>
+        <li>ComicTitle->Words/Nouns/Comic</li>
+        <li>Erotica->Words/Nouns/Erotica</li>
+		<li>Story->Words/Nouns/Story</li>
+		<li>WComicAdjectives->Words/Nouns/WComicAdjectives</li>
+		<li>LewdAdjectives->Words/Nouns/LewdAdjectives</li>
+		<li>SexAct->Words/Nouns/SexAct</li>
+		<li>SexPositions->Words/Nouns/SexPositions</li>
+		<li>SexTags->Words/Nouns/SexTags</li>
+		<li>Fetishes->Words/Nouns/Fetishes</li>
+		<li>ComicGroupNames->Words/Nouns/ComicGroupNames</li>
+		<li>SuperPowers->Words/Nouns/SuperPowers</li>
+		<li>EldritchGods->Words/Nouns/EldritchGods</li>
+		<li>EldritchWordPieces->Words/Nouns/EldritchWordPieces</li>
+      </rulesFiles>
+	  <rulesStrings>
+        <!--<li>book_name_numeric->[maybe_letter][Digit][maybe_letter]</li>
+        <li>book_name_numeric->[maybe_letter][Digit][Digit][maybe_letter]</li>
+        <li>book_name_numeric->[maybe_letter][Digit][Digit][Digit][maybe_letter]</li>
+        <li>book_name_numeric->[maybe_letter][RomanNumeral][maybe_letter]</li>
+        <li>book_name_numeric->[maybe_letter][RomanNumeral][Digit][maybe_letter]</li>
+        <li>book_name_numeric->[maybe_letter][Digit][RomanNumeral][maybe_letter]</li>
+        <li>book_name_numeric->[maybe_letter][Digit][RomanNumeral][Digit][maybe_letter]</li>
+        <li>book_name_numeric->[maybe_letter][RomanNumeral][Digit][RomanNumeral][maybe_letter]</li>
+        <li>book_name_numeric->[maybe_letter][RomanNumeral][Digit][Digit][RomanNumeral][maybe_letter]</li>
+
+        <li>maybe_letter(p=8)-></li>
+        <li>maybe_letter->[Letter]</li>
+        <li>maybe_letter->[Letter][Letter]</li>-->
+
+        <li>maybe_a(p=3)-></li>
+        <li>maybe_a->a</li>
+
+        <li>maybe_adjective(p=5)-></li>
+        <li>maybe_adjective(p=2)->[AdjectiveAngsty]</li>
+        <li>maybe_adjective->[AdjectiveBadass]</li>
+        <li>maybe_adjective->[Color]</li>
+		
+		<li>maybe_wcomicadjective-></li>
+		<li>maybe_wcomicadjective->[WComicAdjectives]</li>
+		
+		<li>maybe_the(p=3)-></li>
+		<li>maybe_the->the</li>
+		
+		<li>either_a_or_the->or</li>
+		<li>either_a_or_the->the</li>
+		
+		<li>sequelitis->electric boogaloo</li>
+		<li>sequelitis->the reckoning</li>
+		<li>sequelitis->[maybe_the] [maybe_adjective] [Character]</li>
+		<li>sequelitis->second wind</li>
+		<li>sequelitis->revenge of [maybe_the] [Character]</li>
+		
+		<li>sexualacted->fucked</li>
+		<li>sexualacted->raped</li>
+		<li>sexualacted->deflowered</li>
+		<li>sexualacted->seduced</li>
+		<li>sexualacted->corrupted</li>
+		<li>sexualacted->gang-banged</li>
+		<li>sexualacted->violated</li>
+		<li>sexualacted->non-consensualed</li>
+		
+		<li>sexualacting->fucking</li>
+		<li>sexualacting->raping</li>
+		<li>sexualacting->deflowering</li>
+		<li>sexualacting->seducing</li>
+		<li>sexualacting->corrupting</li>
+		<li>sexualacting->gang-banging</li>
+		<li>sexualacting->violating</li>
+		<li>sexualacting->non-consensualing</li>
+		
+		<li>sexualacts->fucks</li>
+		<li>sexualacts->rapes</li>
+		<li>sexualacts->deflowers</li>
+		<li>sexualacts->seduces</li>
+		<li>sexualacts->corrupts</li>
+		<li>sexualacts->gang-bangs</li>
+		<li>sexualacts->violates</li>
+		<li>sexualacts->non-consensuals</li>
+		
+		<li>sexualorientation->straight</li>
+		<li>sexualorientation->bisexual</li>
+		<li>sexualorientation->bi</li>
+		<li>sexualorientation->gay</li>
+		<li>sexualorientation->lesbian</li>
+		<li>sexualorientation->asexual</li>
+		<li>sexualorientation->pansexual</li>
+		
+		<li>maybe_sexualorientation(p=3)-></li>
+		<li>maybe_sexualorientation->[sexualorientation]</li>
+		
+		<li>maybe_lewdadjective(p=3)-></li>
+		<li>maybe_lewdadjective->[LewdAdjectives]</li>
+		
+		<li>witnessed->witnessed</li>
+		<li>witnessed->stumbled on</li>
+		<li>witnessed->saw</li>
+		<li>witnessed->peeped on</li>
+		<li>witnessed->spied on</li>
+		
+		<li>underage->boy</li>
+		<li>underage->girl</li>
+		<li>underage->shota</li>
+		<li>underage->loli</li>
+		
+		<li>maybe_underage(p=3)-></li>
+		<li>maybe_underage->[underage]</li>
+		
+		<li>sextags->[SexTags], [SexTags].</li>
+		<li>sextags->[SexTags], [SexTags], [SexTags].</li>
+		<li>sextags->[SexTags], [SexTags], [SexTags], [SexTags].</li>
+		
+		<li>maybe_sextags(p=3)-></li>
+		<li>maybe_sextags->tags: [sextags]</li>
+		
+		<li>hentaichar->[maybe_lewdadjective] [maybe_sexualorientation] [underage]</li>
+		<li>hentaichar->[maybe_lewdadjective] [maybe_sexualorientation] [PersonFamily]</li>
+		<li>hentaichar->[maybe_lewdadjective] [maybe_sexualorientation] [maybe_underage] [PersonJob]</li>
+		<li>hentaichar->[maybe_lewdadjective] [maybe_sexualorientation] [ANYPAWN_nameIndef]</li>
+		
+		<li>wcomicgroupnames->[maybe_adjective] [ComicGroupNames]</li>
+		<li>wcomicgroupnames->[maybe_wcomicadjective] [ComicGroupNames]</li>
+		<li>wcomicgroupnames->[Animal] [ComicGroupNames]</li>
+		
+		<li>fantasyadj->holy</li>
+		<li>fantasyadj->sacred</li>
+		<li>fantasyadj->magic</li>
+		<li>fantasyadj->fell</li>
+		<li>fantasyadj->cursed</li>
+		<li>fantasyadj->forgotten</li>
+		<li>fantasyadj->lost</li>
+		<li>fantasyadj->dread</li>
+		<li>fantasyadj->[Color]</li>
+		
+		<li>maybe_fantasyadj-></li>
+		<li>maybe_fantasyadj->[fantasyadj]</li>
+		
+		<li>fantasyobj->orb</li>
+		<li>fantasyobj->ring</li>
+		<li>fantasyobj->sword</li>
+		<li>fantasyobj->dagger</li>
+		<li>fantasyobj->amulet</li>
+		<li>fantasyobj->chalice</li>
+		<li>fantasyobj->wand</li>
+		<li>fantasyobj->staff</li>
+		<li>fantasyobj->idol</li>
+		<li>fantasyobj->totem</li>
+		
+		<li>fantasyloc->[maybe_fantasyadj] [TerrainFeature]</li>
+		<li>fantasyloc->[maybe_fantasyadj] castle</li>
+		<li>fantasyloc->[maybe_fantasyadj] keep</li>
+		<li>fantasyloc->[maybe_fantasyadj] dungeon</li>
+		
+		<li>macguffin->[maybe_fantasyadj] [fantasyobj]</li>
+		<li>macguffin->[maybe_fantasyadj] [fantasyobj] of [fantasyloc]</li>
+		
+		<li>fantasyclass->paladin</li>
+		<li>fantasyclass->thief</li>
+		<li>fantasyclass->rogue</li>
+		<li>fantasyclass->knight</li>
+		<li>fantasyclass->wizard</li>
+		<li>fantasyclass->mage</li>
+		<li>fantasyclass->sword-sage</li>
+		<li>fantasyclass->bard</li>
+		<li>fantasyclass->barbarian</li>
+		<li>fantasyclass->witch</li>
+		<li>fantasyclass->sorcerer</li>
+		<li>fantasyclass->sorceress</li>
+		<li>fantasyclass->ranger</li>
+		<li>fantasyclass->druid</li>
+		<li>fantasyclass->artificer</li>
+		<li>fantasyclass->monk</li>
+		<li>fantasyclass->sage</li>
+		
+		<li>isekaiadj->novice</li>
+		<li>isekaiadj->beginner</li>
+		<li>isekaiadj->experienced</li>
+		<li>isekaiadj->overpowered</li>
+		<li>isekaiadj->godlike</li>
+		<li>isekaiadj->lv. [Digit]</li>
+		<li>isekaiadj->lv. [Digit][Digit]</li>
+		
+		<li>maybe_isekaiadj-></li>
+		<li>maybe_isekaiadj->[isekaiadj]</li>
+		
+		<li>mysteryroom->closet</li>
+		<li>mysteryroom->foyer</li>
+		<li>mysteryroom->attic</li>
+		<li>mysteryroom->shed</li>
+		<li>mysteryroom->bedroom</li>
+		<li>mysteryroom->workshop</li>
+		<li>mysteryroom->kitchen</li>
+		<li>mysteryroom->dining room</li>
+		<li>mysteryroom->atrium</li>
+		<li>mysteryroom->auditorium</li>
+		<li>mysteryroom->changing room</li>
+		<li>mysteryroom->hidden room</li>
+		<li>mysteryroom->secret room</li>
+		<li>mysteryroom->hidden passage</li>
+		<li>mysteryroom->secret passage</li>
+		<li>mysteryroom->basement</li>
+		<li>mysteryroom->laundry room</li>
+		<li>mysteryroom->garage</li>
+		<li>mysteryroom->bathroom</li>
+		<li>mysteryroom->storage</li>
+		<li>mysteryroom->rec room</li>
+		<li>mysteryroom->living room</li>
+		<li>mysteryroom->library</li>
+		<li>mysteryroom->smoking room</li>
+		<li>mysteryroom->toilet</li>
+		<li>mysteryroom->locker room</li>
+		<li>mysteryroom->curio</li>
+		<li>mysteryroom->laboratory</li>
+		<li>mysteryroom->lab</li>
+		<li>mysteryroom->secret lab</li>
+		<li>mysteryroom->hidden lab</li>
+		
+		<li>mysterysetting->manor</li>
+		<li>mysterysetting->mansion</li>
+		<li>mysterysetting->castle</li>
+		<li>mysterysetting->chateau</li>
+		<li>mysterysetting->estate</li>
+		<li>mysterysetting->cabin</li>
+		<li>mysterysetting->isolated village</li>
+		<li>mysterysetting->movie theater</li>
+		<li>mysterysetting->abandoned warehouse</li>
+		<li>mysterysetting->movie set</li>
+		<li>mysterysetting->creepy manor</li>
+		<li>mysterysetting->house</li>
+		<li>mysterysetting->penthouse apartment</li>
+		<li>mysterysetting->lonely outpost</li>
+		<li>mysterysetting->lighthouse</li>
+		<li>mysterysetting->suburban housing</li>
+		<li>mysterysetting->trailer park</li>
+		<li>mysterysetting->Rimworld base</li>
+		<li>mysterysetting->restaurant</li>
+		<li>mysterysetting->brothel</li>
+		<li>mysterysetting->diner</li>
+		<li>mysterysetting->apartment</li>
+		<li>mysterysetting->school</li>
+		<li>mysterysetting->university</li>
+		<li>mysterysetting->fraternity</li>
+		
+		<li>mysteryweapon->gun</li>
+		<li>mysteryweapon->knife</li>
+		<li>mysteryweapon->hammer</li>
+		<li>mysteryweapon->drill</li>
+		<li>mysteryweapon->poison</li>
+		<li>mysteryweapon->spoon</li>
+		<li>mysteryweapon->fork</li>
+		<li>mysteryweapon->spork</li>
+		<li>mysteryweapon->pair of chopsticks</li>
+		<li>mysteryweapon->bare hands</li>
+		<li>mysteryweapon->metal candle holder</li>
+		<li>mysteryweapon->bust of [ANYPAWN_nameIndef]</li>
+		<li>mysteryweapon->[Vegetable]</li>
+		<li>mysteryweapon->[Weapon]</li>
+		
+		<li>mysteryclue->blood stain</li>
+		<li>mysteryclue->trail of blood</li>
+		<li>mysteryclue->vomit chunk</li>
+		<li>mysteryclue->trail of vomit</li>
+		<li>mysteryclue->trace of bodily fluid</li>
+		<li>mysteryclue->fingerprint</li>
+		<li>mysteryclue->footprint</li>
+		<li>mysteryclue->print</li>
+		<li>mysteryclue->dandruff</li>
+		<li>mysteryclue->skin tissue</li>
+		<li>mysteryclue->DNA evidence</li>
+		<li>mysteryclue->strand of hair</li>
+		<li>mysteryclue->clump of hair</li>
+		<li>mysteryclue->piece of disguise</li>
+		<li>mysteryclue->stolen good</li>
+		<li>mysteryclue->letter</li>
+		<li>mysteryclue->piece of thread</li>
+		<li>mysteryclue->piece of fabric</li>
+		<li>mysteryclue->burnt remainder</li>
+		<li>mysteryclue->severed finger</li>
+		<li>mysteryclue->severed ear</li>
+		<li>mysteryclue->severed nose</li>
+		<li>mysteryclue->security footage</li>
+		<li>mysteryclue->data stick</li>
+		<li>mysteryclue->data node</li>
+		<li>mysteryclue->memory chip</li>
+		<li>mysteryclue->disk drive</li>
+		<li>mysteryclue->bag of cash</li>
+		<li>mysteryclue->faint trace</li>
+		<li>mysteryclue->clue</li>
+		<li>mysteryclue->[Vegetable]</li>
+		<li>mysteryclue->[Animal]</li>
+		
+		<li>eldritchadj->eldritch</li>
+		<li>eldritchadj->elder</li>
+		<li>eldritchadj->cthonian</li>
+		<li>eldritchadj->forgotten</li>
+		<li>eldritchadj->evil</li>
+		<li>eldritchadj->incomprehensible</li>
+		<li>eldritchadj->unseen</li>
+		<li>eldritchadj->non-euclidean</li>
+		
+		<li>eldritchgodtype->god</li>
+		<li>eldritchgodtype->goddess</li>
+		<li>eldritchgodtype->deity</li>
+		<li>eldritchgodtype->spirit</li>
+		<li>eldritchgodtype->entity</li>
+		<li>eldritchgodtype->non-being</li>
+		<li>eldritchgodtype->demon</li>
+		<li>eldritchgodtype->malevolence</li>
+		<li>eldritchgodtype->monster</li>
+		<li>eldritchgodtype->monstrosity</li>
+		<li>eldritchgodtype->high priest</li>
+		<li>eldritchgodtype->demon</li>
+		
+		<li>eldritchgodnamegen->[EldritchWordPieces]'[EldritchWordPieces][EldritchWordPieces]</li>
+		<li>eldritchgodnamegen->[EldritchWordPieces]'[EldritchWordPieces][EldritchWordPieces]'[EldritchWordPieces]</li>
+		<li>eldritchgodnamegen->[EldritchWordPieces]'[EldritchWordPieces][EldritchWordPieces]'[EldritchWordPieces][EldritchWordPieces]</li>
+		<li>eldritchgodnamegen->[EldritchWordPieces][EldritchWordPieces]'[EldritchWordPieces]'[EldritchWordPieces][EldritchWordPieces]</li>
+		<li>eldritchgodnamegen->[EldritchWordPieces][EldritchWordPieces]-[EldritchWordPieces]</li>
+		<li>eldritchgodnamegen->[EldritchWordPieces][EldritchWordPieces]</li>
+		<li>eldritchgodnamegen->[EldritchWordPieces][EldritchWordPieces][EldritchWordPieces]</li>
+		<li>eldritchgodnamegen->[EldritchWordPieces][EldritchWordPieces][EldritchWordPieces][EldritchWordPieces]</li>
+		
+		<li>eldritchgodnamegenplus->[eldritchgodnamegen]</li>
+		<li>eldritchgodnamegenplus->[eldritchgodnamegen] the [maybe_adjective] [ConceptAny]</li>
+		<li>eldritchgodnamegenplus->[AdjectiveAny] [eldritchgodnamegen]</li>
+		
+		<li>eldritchgodjob->[PersonJob]</li>
+		<li>eldritchgodjob->king</li>
+		<li>eldritchgodjob->prophet</li>
+		<li>eldritchgodjob->messenger</li>
+		<li>eldritchgodjob->eminence</li>
+		<li>eldritchgodjob->terror</li>
+		<li>eldritchgodjob->horror</li>
+		<li>eldritchgodjob->majesty</li>
+		<li>eldritchgodjob->emperor</li>
+		<li>eldritchgodjob->queen</li>
+		
+		<li>eldritchgodname->[EldritchGods]</li>
+		<li>eldritchgodname->[eldritchgodnamegenplus]</li>
+		<li>eldritchgodname->[VME_eldritchdeityName]</li>
+		<li>eldritchgodname->[VME_eldritchdeityName], [VME_eldritchdeityType]</li>
+		<li>eldritchgodname->[eldritchgodjob] in [Color]</li>
+		<li>eldritchgodname->[eldritchgodjob] of [ConceptAny]</li>
+		<li>eldritchgodname->[Shape] of [ConceptAny]</li>
+		<li>eldritchgodname->[Color] of [ConceptAny]</li>
+		
+		<li>writingstyle_adj(p=500)->unoriginal</li>
+        <li>writingstyle_adj(p=500)->simple</li>
+        <li>writingstyle_adj(p=500)->complex and realistic</li>
+        <li>writingstyle_adj(p=500)->surrealistic</li>
+        <li>writingstyle_adj(p=500)->classical</li>
+        <li>writingstyle_adj(p=500)->modern</li>
+        <li>writingstyle_adj(p=500)->symbolic</li>
+        <li>writingstyle_adj(p=500)->amateurish yet inviting</li>
+        <li>writingstyle_adj(p=500)->Dickensian</li>
+        <li>writingstyle_adj(p=500)->Jane Austen-esque</li>
+        <li>writingstyle_adj(p=500)->expressionistic</li>
+        <li>writingstyle_adj(p=500)->Victorian</li>
+        <li>writingstyle_adj(p=500)->Orwellian</li>
+        <li>writingstyle_adj(p=500)->Kafkaesque</li>
+        <li>writingstyle_adj(p=500)->Gatsbyian</li>
+        <li>writingstyle_adj(p=500)->violent</li>
+        <li>writingstyle_adj(p=500)->abstract</li>
+        <li>writingstyle_adj(p=500)->hyper-realistic</li>
+        <li>writingstyle_adj(p=500)->pulp</li>
+        <li>writingstyle_adj(p=500)->minimalistic</li>
+        <li>writingstyle_adj(p=500)->comedic</li>
+        <li>writingstyle_adj(p=500)->purist</li>
+        <li>writingstyle_adj(p=500)->romantic</li>
+        <li>writingstyle_adj(p=500)->erotic</li>
+        <li>writingstyle_adj(p=500)->sensual</li>
+        <li>writingstyle_adj(p=500)->heartfelt</li>
+		<li>writingstyle_adj(p=500)->clinical</li>
+		<li>writingstyle_adj(p=500)->experimental</li>
+		
+		<li>drawingstyle_adj->unoriginal</li>
+        <li>drawingstyle_adj->simple</li>
+        <li>drawingstyle_adj->complex and realistic</li>
+        <li>drawingstyle_adj->surrealistic</li>
+        <li>drawingstyle_adj->classical</li>
+        <li>drawingstyle_adj->modern</li>
+        <li>drawingstyle_adj->symbolic</li>
+        <li>drawingstyle_adj->amateurish yet attractive</li>
+        <li>drawingstyle_adj->detail-oriented</li>
+        <li>drawingstyle_adj->blocky</li>
+        <li>drawingstyle_adj->cubist</li>
+        <li>drawingstyle_adj->impressionistic</li>
+        <li>drawingstyle_adj->expressionistic</li>
+        <li>drawingstyle_adj->photographic</li>
+        <li>drawingstyle_adj->baroque</li>
+        <li>drawingstyle_adj->dadaist</li>
+        <li>drawingstyle_adj->glitch-art</li>
+        <li>drawingstyle_adj->pixelated</li>
+        <li>drawingstyle_adj->fauvist</li>
+        <li>drawingstyle_adj->folksy</li>
+        <li>drawingstyle_adj->figurative</li>
+        <li>drawingstyle_adj->sinuous</li>
+        <li>drawingstyle_adj->geometric</li>
+        <li>drawingstyle_adj->abstract</li>
+        <li>drawingstyle_adj->hyper-realistic</li>
+        <li>drawingstyle_adj->pop art</li>
+        <li>drawingstyle_adj->minimalistic</li>
+        <li>drawingstyle_adj->neoclassical</li>
+        <li>drawingstyle_adj->cel-shaded</li>
+        <li>drawingstyle_adj->post-impressionistic</li>
+        <li>drawingstyle_adj->purist</li>
+        <li>drawingstyle_adj->rococo</li>
+        <li>drawingstyle_adj->romanesque</li>
+        <li>drawingstyle_adj->romantic</li>
+        <li>drawingstyle_adj->graffiti-like</li>
+        <li>drawingstyle_adj->erotic</li>
+        <li>drawingstyle_adj->sensual</li>
+        <li>drawingstyle_adj->heartfelt</li>
+		<li>drawingstyle_adj->calarts-like</li>
+		<li>drawingstyle_adj->anime-like</li>
+		<li>drawingstyle_adj->experimental</li>
+		
+	  </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <RulePackDef>
+    <defName>RimWriterNamerComic</defName>
+    <include>
+      <li>RimWriterAddonNameUtility</li>
+	  <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+		
+		<li>westerncomic_title->[maybe_the] [maybe_wcomicadjective] [Story] of [ANYPAWN_nameIndef]</li>
+		<li>westerncomic_title->[maybe_the] [maybe_wcomicadjective] [Story] of [Character]</li>
+		<li>westerncomic_title->[maybe_the] [maybe_wcomicadjective] [Story] of the [wcomicgroupnames]</li>
+		<li>westerncomic_title->[maybe_wcomicadjective] [Story] in the [maybe_adjective] [TerrainFeature]</li>
+		<li>westerncomic_title->Kill [Quantity_adjphrase] [Character]</li>
+		<li>westerncomic_title->Trouble at [r_name]</li>
+		<li>westerncomic_title->Trouble at [maybe_the] [TerrainFeature]</li>
+		<li>westerncomic_title->[ANYPAWN_nameIndef] and the [maybe_adjective] [Animal] of [r_name]</li>
+		<li>westerncomic_title->[ANYPAWN_nameIndef] and the [maybe_adjective] [Game] of [r_name]</li>
+		<li>westerncomic_title->[ANYPAWN_nameIndef] and the [AdjectiveLarge] [NaturalObject] of [r_name]</li>
+		<li>westerncomic_title->[ANYPAWN_nameIndef] and the [AdjectiveLarge] [Vegetable] of [r_name]</li>
+		<li>westerncomic_title->[Character]: A collection</li>
+		<li>westerncomic_title->[Character]: The definitive collection</li>
+		<li>westerncomic_title->[ConceptAny]man the [maybe_wcomicadjective] [Story]</li>
+		<li>westerncomic_title->[ConceptAny]woman the [maybe_wcomicadjective] [Story]</li>
+		<li>westerncomic_title->[ConceptAny]kid the [maybe_wcomicadjective] [Story]</li>
+		<li>westerncomic_title->[ConceptAny]boy the [maybe_wcomicadjective] [Story]</li>
+		<li>westerncomic_title->[ConceptAny]girl the [maybe_wcomicadjective] [Story]</li>
+		
+		<!-- General -->
+        <li>r_art_name(p=4)->[ConceptAny]</li>
+		<li>r_art_name->[maybe_a] [maybe_adjective] [ConceptAny]</li>
+		<li>r_art_name->[maybe_a] [maybe_adjective] [TerrainFeature]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Vegetable]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Game]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Animal]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Gore]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [NaturalObject]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [PersonFamily]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Enemy]</li>
+		<li>r_art_name->[maybe_the] [maybe_adjective] [ConceptAny]</li>
+		<li>r_art_name->[maybe_the] [maybe_adjective] [TerrainFeature]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Vegetable]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Game]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Animal]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Gore]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [NaturalObject]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [PersonFamily]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Enemy]</li>
+		<li>r_art_name(p=9)->[westerncomic_title]</li>
+		<li>r_art_name(p=7)->[westerncomic_title] [RomanNumeral]: [sequelitis]</li>
+		<li>r_art_name(p=6)->[ANYPAWN_nameIndef]'s [ComicTitle]</li>
+		<li>r_art_name(p=6)->[ANYPAWN_nameIndef]'s [maybe_adjective] [Story]</li>
+		<li>r_art_name(p=3)->[maybe_a] [ANYPAWN_nameIndef] [Trans] [Color]</li>
+        <li>r_art_name(p=3)->[ANYPAWN_nameIndef]'s [PersonalCharacteristic]</li>
+        <li>r_art_name(p=3)->[PersonalCharacteristic] of [ANYPAWN_nameIndef]</li>
+        <li>r_art_name(p=3)->[ConceptAny] [Trans] [ANYPAWN_nameIndef]</li>
+		<li>r_art_name(p=3)->[AdjectiveAny] [ANYPAWN_nameIndef]</li>
+        <!--<li>r_art_name(p=4)->[ComicTitle] [Trans] [ConceptAny]</li>
+        <li>r_art_name(p=4)->[ComicTitle] [Trans] [ConceptAny]</li>
+        <li>r_art_name(p=4)->[maybe_a] [maybe_adjective] [ComicTitle]</li>
+        -->
+        <!-- Person. High probability; if we can use these we want to -->
+        <!--
+        
+        <li>r_art_name(p=3)->[maybe_a] [ComicTitle] [Trans] [ANYPAWN_nameIndef]</li>-->
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterNamerHentai</defName>
+    <include>
+      <li>RimWriterAddonNameUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+		
+		<li>hentai_title->Together with my [hentaichar]</li>
+		<li>hentai_title->[hentaichar] dearest</li>
+		<li>hentai_title->My [hentaichar] is [LewdAdjectives], so I [sexualacted] them</li>
+		<li>hentai_title->I [witnessed] [hentaichar] [sexualacting] my [hentaichar]</li>
+		<li>hentai_title->[maybe_the] [hentaichar] next door</li>
+		<li>hentai_title->My [hentaichar] got turned into a [LewdAdjective] [underage], so I [sexualacted] them</li>
+		<li>hentai_title->I got turned into a [LewdAdjectives] [underage], so I got [sexualacted]</li>
+		<li>hentai_title->I'm a [LewdAdjectives] [underage] [PersonJob]</li>
+		<li>hentai_title->I'm a [LewdAdjectives] [underage] [Animal]</li>
+		<li>hentai_title->My [PersonFamily] is a [LewdAdjectives] [underage] [Animal]</li>
+		<li>hentai_title->All night with my [hentaichar]</li>
+		<li>hentai_title->When [PersonFamily] is gone, I [sexualacted] my [hentaichar]</li>
+		<li>hentai_title->[sexualacting] with my [hentaichar]</li>
+		<li>hentai_title->Suprise [sexualacting] my [hentaichar]</li>
+		<li>hentai_title->The [AdjectiveAny] [PersonJob] became my [hentaichar]</li>
+		<li>hentai_title->The [Community] [PersonJob] became my [hentaichar]</li>
+		<li>hentai_title->Daily [sexualacting] of my [hentaichar]</li>
+		<li>hentai_title->Forbidden [hentaichar]</li>
+		<li>hentai_title->[hentaichar]'s destruction</li>
+		<li>hentai_title->I can't believe my [hentaichar] is this [LewdAdjective]!</li>
+		<li>hentai_title->I can't believe my [hentaichar] is my [PersonFamily]</li>
+		
+		<!-- General -->
+        <li>r_art_name->[ConceptAny]</li>
+		<li>r_art_name->[maybe_a] [maybe_lewdadjective] [ConceptAny]</li>
+		<li>r_art_name->[maybe_the] [maybe_lewdadjective] [ConceptAny]</li>
+		<li>r_art_name(p=4)->[hentai_title]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterNamerErotica</defName>
+    <include>
+      <li>RimWriterAddonNameUtility</li>
+	  <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+
+		<li>erotica_title->Together with my [hentaichar]</li>
+		<li>erotica_title->[hentaichar] dearest</li>
+		<li>erotica_title->[maybe_the] [hentaichar] next door</li>
+		<li>erotica_title->All night with my [hentaichar]</li>
+		<li>erotica_title->[Quantity_adjphrase] shades of [Color]</li>
+		<li>erotica_title->[maybe_the] [sexualorientation] [Character] from [r_name]</li>
+		
+		<!-- General -->
+        <li>r_art_name->[ConceptAny]</li>
+		<li>r_art_name->[maybe_a] [maybe_lewdadjective] [ConceptAny]</li>
+		<li>r_art_name->[maybe_the] [maybe_lewdadjective] [ConceptAny]</li>
+		<li>r_art_name(p=4)->[erotica_title]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterNamerFantasy</defName>
+    <include>
+      <li>RimWriterAddonNameUtility</li>
+	  <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+		
+		<li>fantasynovel_title->[AdjectiveAny] [Story] in the [maybe_adjective] [TerrainFeature]</li>
+		<li>fantasynovel_title->Trouble at [r_name]</li>
+		<li>fantasynovel_title->Trouble at [maybe_the] [TerrainFeature]</li>
+		<li>fantasynovel_title->[ANYPAWN_nameIndef] and the [maybe_adjective] [Animal] of [r_name]</li>
+		<li>fantasynovel_title->[ANYPAWN_nameIndef] and the [maybe_adjective] [Game] of [r_name]</li>
+		<li>fantasynovel_title->[ANYPAWN_nameIndef] and the [AdjectiveLarge] [NaturalObject] of [r_name]</li>
+		<li>fantasynovel_title->[ANYPAWN_nameIndef] and the [AdjectiveLarge] [Vegetable] of [r_name]</li>
+		<li>fantasynovel_title->[ANYPAWN_nameIndef] and the [macguffin]</li>
+		<li>fantasynovel_title->Far over the [TerrainFeature]</li>
+		<li>fantasynovel_title->Beyond the [TerrainFeature]</li>
+		<li>fantasynovel_title->Reborn as a [maybe_isekaiadj] [fantasyclass] in [fantasyloc]</li>
+		
+		<!-- General -->
+        <li>r_art_name(p=4)->[ConceptAny]</li>
+		<li>r_art_name->[maybe_a] [maybe_adjective] [ConceptAny]</li>
+		<li>r_art_name->[maybe_a] [maybe_adjective] [TerrainFeature]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Vegetable]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Game]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Animal]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Gore]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [NaturalObject]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [PersonFamily]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Enemy]</li>
+		<li>r_art_name->[maybe_the] [maybe_adjective] [ConceptAny]</li>
+		<li>r_art_name->[maybe_the] [maybe_adjective] [TerrainFeature]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Vegetable]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Game]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Animal]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Gore]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [NaturalObject]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [PersonFamily]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Enemy]</li>
+		<li>r_art_name(p=12)->[fantasynovel_title]</li>
+		<li>r_art_name(p=7)->[fantasynovel_title] [RomanNumeral]: [sequelitis]</li>
+		<li>r_art_name(p=6)->[ANYPAWN_nameIndef]'s [maybe_adjective] [Story]</li>
+		<li>r_art_name(p=3)->[maybe_a] [ANYPAWN_nameIndef] [Trans] [Color]</li>
+        <li>r_art_name(p=3)->[ANYPAWN_nameIndef]'s [PersonalCharacteristic]</li>
+        <li>r_art_name(p=3)->[PersonalCharacteristic] of [ANYPAWN_nameIndef]</li>
+        <li>r_art_name(p=3)->[ConceptAny] [Trans] [ANYPAWN_nameIndef]</li>
+		<li>r_art_name(p=3)->[AdjectiveAny] [ANYPAWN_nameIndef]</li>
+        <!--<li>r_art_name(p=4)->[ComicTitle] [Trans] [ConceptAny]</li>
+        <li>r_art_name(p=4)->[ComicTitle] [Trans] [ConceptAny]</li>
+        <li>r_art_name(p=4)->[maybe_a] [maybe_adjective] [ComicTitle]</li>
+        -->
+        <!-- Person. High probability; if we can use these we want to -->
+        <!--
+        
+        <li>r_art_name(p=3)->[maybe_a] [ComicTitle] [Trans] [ANYPAWN_nameIndef]</li>-->
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterNamerMystery</defName>
+    <include>
+      <li>RimWriterAddonNameUtility</li>
+	  <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+		
+		<li>mysterycase->case</li>
+		<li>mysterycase->affair</li>
+		<li>mysterycase->caper</li>
+		<li>mysterycase->ordeal</li>
+		
+		<li>mystery_title_part->the [maybe_adjective] [mysteryweapon] [mysterycase]</li>
+		<li>mystery_title_part->the [maybe_adjective] [mysteryclue] [mysterycase]</li>
+		<li>mystery_title_part->the [maybe_adjective] [mysterycase] of the [maybe_adjective] [mysteryweapon]</li>
+		<li>mystery_title_part->the [maybe_adjective] [mysterycase] of the [maybe_adjective] [mysteryclue]</li>
+		<li>mystery_title_part->the [mysterycase] of the locked [mysteryroom]</li>
+		<li>mystery_title_part->the [mysterycase] of the [maybe_adjective] [mysterysetting] on the [TerrainFeature]</li>
+		
+		<li>mystery_title->[maybe_the] mystery of [ANYPAWN_nameIndef]</li>
+		<li>mystery_title->[maybe_the] adventures of detective [ANYPAWN_nameIndef]</li>
+		<li>mystery_title->[maybe_wcomicadjective] [Story] in the [maybe_adjective] [TerrainFeature]</li>
+		<li>mystery_title->Trouble at [r_name]</li>
+		<li>mystery_title->Trouble at [maybe_the] [TerrainFeature]</li>
+		<li>mystery_title->[ANYPAWN_nameIndef] and the [maybe_adjective] [Animal] of [r_name]</li>
+		<li>mystery_title->[ANYPAWN_nameIndef] and the [maybe_adjective] [Game] of [r_name]</li>
+		<li>mystery_title->[ANYPAWN_nameIndef] and the [AdjectiveLarge] [NaturalObject] of [r_name]</li>
+		<li>mystery_title->[ANYPAWN_nameIndef] and the [AdjectiveLarge] [Vegetable] of [r_name]</li>
+		<li>mystery_title->[mystery_title_part]</li>
+		<li>mystery_title->[maybe_the] [Character] and [mystery_title_part]</li>
+		<li>mystery_title->[ANYPAWN_nameIndef] and [mystery_title_part]</li>
+		
+		
+		<!-- General -->
+        <li>r_art_name(p=4)->[ConceptAny]</li>
+		<li>r_art_name->[maybe_a] [maybe_adjective] [ConceptAny]</li>
+		<li>r_art_name->[maybe_a] [maybe_adjective] [TerrainFeature]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Vegetable]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Game]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Animal]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Gore]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [NaturalObject]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [PersonFamily]</li>
+        <li>r_art_name->[maybe_a] [maybe_adjective] [Enemy]</li>
+		<li>r_art_name->[maybe_the] [maybe_adjective] [ConceptAny]</li>
+		<li>r_art_name->[maybe_the] [maybe_adjective] [TerrainFeature]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Vegetable]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Game]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Animal]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Gore]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [NaturalObject]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [PersonFamily]</li>
+        <li>r_art_name->[maybe_the] [maybe_adjective] [Enemy]</li>
+		<li>r_art_name(p=20)->[mystery_title]</li>
+		<li>r_art_name(p=7)->[mystery_title] [RomanNumeral]: [sequelitis]</li>
+		<li>r_art_name(p=6)->[ANYPAWN_nameIndef]'s crime novel</li>
+		<li>r_art_name(p=3)->[maybe_a] [ANYPAWN_nameIndef] [Trans] [Color]</li>
+        <li>r_art_name(p=3)->[ConceptAny] [Trans] [ANYPAWN_nameIndef]</li>
+        <!--<li>r_art_name(p=4)->[ComicTitle] [Trans] [ConceptAny]</li>
+        <li>r_art_name(p=4)->[ComicTitle] [Trans] [ConceptAny]</li>
+        <li>r_art_name(p=4)->[maybe_a] [maybe_adjective] [ComicTitle]</li>
+        -->
+        <!-- Person. High probability; if we can use these we want to -->
+        <!--
+        
+        <li>r_art_name(p=3)->[maybe_a] [ComicTitle] [Trans] [ANYPAWN_nameIndef]</li>-->
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterNamerEldritch</defName>
+    <include>
+      <li>RimWriterAddonNameUtility</li>
+	  <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+
+		<li>eldritch_title->Dreams of [eldritchadj] [eldritchgodname]</li>
+		<li>eldritch_title->The [eldritchadj] [mysteryroom]</li>
+		<li>eldritch_title->The [Color] [mysteryroom]</li>
+		<li>eldritch_title->[ConceptAny] of [eldritchgodname]</li>
+		<li>eldritch_title->Personal account of [ANYPAWN_nameIndef]</li>
+		<li>eldritch_title->Collected visions of [ANYPAWN_nameIndef]</li>
+		<li>eldritch_title->The [eldritchadj] doom that came to the [mysterysetting]</li>
+		<li>eldritch_title->Call of [eldritchgodname]</li>
+		<li>eldritch_title->Witness! [eldritchgodname]</li>
+		<li>eldritch_title->An encounter with [eldritchgodname]</li>
+		<li>eldritch_title->Mind-breaking [eldritchgodname]</li>
+		<li>eldritch_title->[eldritchgodname]'s temptation</li>
+		
+		<!-- General -->
+        <li>r_art_name->[ConceptAny]</li>
+		<li>r_art_name->[maybe_a] [ConceptAny]</li>
+		<li>r_art_name->[maybe_the] [ConceptAny]</li>
+		<li>r_art_name->[eldritchadj] [ConceptAny]</li>
+		<li>r_art_name(p=7)->[eldritch_title]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterNamerFashionMagazine</defName>
+    <include>
+      <li>RimWriterAddonNameUtility</li>
+	  <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+		
+		<li>fashionitem->Hats</li>
+		<li>fashionitem->Tunics</li>
+		<li>fashionitem->Dresses</li>
+		<li>fashionitem->Belts</li>
+		<li>fashionitem->Robes</li>
+		<li>fashionitem->Menswear</li>
+		<li>fashionitem->Pants</li>
+		<li>fashionitem->T-Shirts</li>
+		<li>fashionitem->Mittens</li>
+		<li>fashionitem->Gloves</li>
+		<li>fashionitem->Shoes</li>
+		<li>fashionitem->Footwear</li>
+		<li>fashionitem->Socks</li>
+		<li>fashionitem->Hoodies</li>
+		<li>fashionitem->Lingerie</li>
+		<li>fashionitem->Bikini</li>
+		<li>fashionitem->Swimsuits</li>
+		<li>fashionitem->Dusters</li>
+		<li>fashionitem->Kimonos</li>
+		<li>fashionitem->Tribalwear</li>
+		<li>fashionitem->Shawls</li>
+		<li>fashionitem->Sweaters</li>
+		<li>fashionitem->Suits</li>
+		<li>fashionitem->Skinsuits</li>
+		<li>fashionitem->Leotards</li>
+		<li>fashionitem->Pajamas</li>
+		
+		<li>fashionmagazineterm->Fashion</li>
+		<li>fashionmagazineterm->Couture</li>
+		<li>fashionmagazineterm->Trendy</li>
+		<li>fashionmagazineterm (p=5)->[fashionitem]</li>
+		
+		<!-- General -->
+        <li>r_art_name(p=2)->[maybe_the] [ConceptAny]</li>
+		<li>r_art_name->[maybe_magazinenamefront] [magazinenamebehind]</li>
+		<li>r_art_name->[magazinenamefront] [maybe_magazinenamebehind]</li>
+		<li>r_art_name->[maybe_magazinenamefront] [fashionmagazineterm]</li>
+		<li>r_art_name->[fashionmagazineterm] [maybe_magazinenamebehind]</li>
+		<li>r_art_name->[fashionitem] and [fashionitem]</li>
+		<li>r_art_name(p=6)->[ANYPAWN_nameIndef]'s [maybe_magazinenamebehind]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterNamerScienceMagazine</defName>
+    <include>
+      <li>RimWriterAddonNameUtility</li>
+	  <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+		
+		<li>sciencefield->Biology</li>
+		<li>sciencefield->Physics</li>
+		<li>sciencefield->Psychology</li>
+		<li>sciencefield->Mathematics</li>
+		<li>sciencefield->Quantum Physics</li>
+		<li>sciencefield->Technology</li>
+		<li>sciencefield->Geography</li>
+		<li>sciencefield->Geology</li>
+		<li>sciencefield->Entomology</li>
+		<li>sciencefield->Etymology</li>
+		<li>sciencefield->Astronomy</li>
+		<li>sciencefield->Herpetology</li>
+		<li>sciencefield->Zoology</li>
+		<li>sciencefield->Theoretical Physics</li>
+		<li>sciencefield->Applied Mathematics</li>
+		<li>sciencefield->Chemistry</li>
+		<li>sciencefield->Marine Biology</li>
+		<li>sciencefield->Archaeology</li>
+		<li>sciencefield->Anthropology</li>
+		<li>sciencefield->Sociology</li>
+		<li>sciencefield->Computer Science</li>
+		<li>sciencefield->Archotechnology</li>
+		<li>sciencefield->Meteorology</li>
+		
+		<li>scienceperson->Biologist</li>
+		<li>scienceperson->Physicist</li>
+		<li>scienceperson->Psychologist</li>
+		<li>scienceperson->Mathematician</li>
+		<li>scienceperson->Quantum Physicist</li>
+		<li>scienceperson->Technologist</li>
+		<li>scienceperson->Geographer</li>
+		<li>scienceperson->Geologist</li>
+		<li>scienceperson->Entomologist</li>
+		<li>scienceperson->Etymologist</li>
+		<li>scienceperson->Astronomist</li>
+		<li>scienceperson->Herpetologist</li>
+		<li>scienceperson->Zoologist</li>
+		<li>scienceperson->Theoretical Physicist</li>
+		<li>scienceperson->Applied Mathematician</li>
+		<li>scienceperson->Chemist</li>
+		<li>scienceperson->Marine Biologist</li>
+		<li>scienceperson->Archaeologist</li>
+		<li>scienceperson->Anthropologist</li>
+		<li>scienceperson->Sociologist</li>
+		<li>scienceperson->Computer Scientist</li>
+		<li>scienceperson->Archotechnologist</li>
+		<li>scienceperson->Meteorologist</li>
+		
+		<li>sciencestuff->[sciencefield]</li>
+		<li>sciencestuff->[scienceperson]</li>
+		
+		<!-- General -->
+		<li>r_art_name->[maybe_magazinenamefront] [magazinenamebehind]</li>
+		<li>r_art_name->[magazinenamefront] [maybe_magazinenamebehind]</li>
+		<li>r_art_name->[magazinenamefront] [sciencestuff]</li>
+		<li>r_art_name->[sciencestuff] [magazinenamebehind]</li>
+		<li>r_art_name->[magazinenamefront] Science</li>
+		<li>r_art_name->[magazinenamefront] Geographic</li>
+		<li>r_art_name->Scientific [magazinenamebehind]</li>
+		<li>r_art_name->Scientific [r_name]</li>
+		<li>r_art_name->[sciencefield] and [sciencefield]</li>
+		<li>r_art_name->[ANYPAWN_nameIndef]'s [maybe_magazinenamebehind]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterNamerTechnicalMagazine</defName>
+    <include>
+      <li>RimWriterAddonNameUtility</li>
+	  <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+		
+		<li>technicvehicles->Motorcycles</li>
+		<li>technicvehicles->Tanks</li>
+		<li>technicvehicles->Boats</li>
+		<li>technicvehicles->Cars</li>
+		<li>technicvehicles->Automotives</li>
+		<li>technicvehicles->Spaceships</li>
+		<li>technicvehicles->Airplanes</li>
+		<li>technicvehicles->Hoverbikes</li>
+		<li>technicvehicles->Rockets</li>
+		<li>technicvehicles->Spaceplanes</li>
+		<li>technicvehicles->Hovercrafts</li>
+		<li>technicvehicles->Mopeds</li>
+		<li>technicvehicles->Bicycles</li>
+		<li>technicvehicles->Jetpacks</li>
+		<li>technicvehicles->Swegways</li>
+		
+		<li>technicbuildings->Houses</li>
+		<li>technicbuildings->Barns</li>
+		<li>technicbuildings->Sheds</li>
+		<li>technicbuildings->Bridges</li>
+		<li>technicbuildings->Churches</li>
+		<li>technicbuildings->Temples</li>
+		<li>technicbuildings->Architecture</li>
+		<li>technicbuildings->Plazas</li>
+		<li>technicbuildings->Gardens</li>
+		<li>technicbuildings->Skyscrapers</li>
+		<li>technicbuildings->High-Rises</li>
+		<li>technicbuildings->Apartments</li>
+		<li>technicbuildings->Bungalows</li>
+		<li>technicbuildings->Huts</li>
+		<li>technicbuildings->Facilities</li>
+		<li>technicbuildings->Power Plants</li>
+		<li>technicbuildings->Hydroponics</li>
+		<li>technicbuildings->Greenhouses</li>
+		<li>technicbuildings->Hovels</li>
+		
+		<li>technicmisc->Computers</li>
+		<li>technicmisc->Machinery</li>
+		<li>technicmisc->Gadgets</li>
+		<li>technicmisc->Gizmos</li>
+		<li>technicmisc->Doohickeys</li>
+		<li>technicmisc->Artifacts</li>
+		
+		<li>technicstuff->[technicvehicles]</li>
+		<li>technicstuff->[technicbuildings]</li>
+		<li>technicstuff->[technicmisc]</li>
+		
+		<!-- General -->
+		<li>r_art_name->[maybe_magazinenamefront] [magazinenamebehind]</li>
+		<li>r_art_name->[magazinenamefront] [maybe_magazinenamebehind]</li>
+		<li>r_art_name->[magazinenamefront] [technicstuff]</li>
+		<li>r_art_name->[technicstuff] [magazinenamebehind]</li>
+		<li>r_art_name->[magazinenamefront] Technical</li>
+		<li>r_art_name->Technical [magazinenamebehind]</li>
+		<li>r_art_name->Construction [magazinenamebehind]</li>
+		<li>r_art_name->[technicvehicles] and [technicvehicles]</li>
+		<li>r_art_name->[technicbuildings] and [technicbuildings]</li>
+		<li>r_art_name->[technicmisc] and [technicmisc]</li>
+		<li>r_art_name->[ANYPAWN_nameIndef]'s [maybe_magazinenamebehind]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterNamerCookingMagazine</defName>
+    <include>
+      <li>RimWriterAddonNameUtility</li>
+	  <li>WorldFeatureNamerCommon</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+		
+		<li>cookingmeal->Stew</li>
+		<li>cookingmeal->Sweets</li>
+		<li>cookingmeal->Candy</li>
+		<li>cookingmeal->Sushi</li>
+		<li>cookingmeal->Sashimi</li>
+		<li>cookingmeal->Polenta</li>
+		<li>cookingmeal->Taco</li>
+		<li>cookingmeal->Pasta</li>
+		<li>cookingmeal->Pizza</li>
+		<li>cookingmeal->Hamburger</li>
+		<li>cookingmeal->Hotdog</li>
+		<li>cookingmeal->Bratwurst</li>
+		<li>cookingmeal->Porridge</li>
+		<li>cookingmeal->Waffle</li>
+		
+		<li>cookingingredient->Meat</li>
+		<li>cookingingredient->Fish</li>
+		<li>cookingingredient->Vegetable</li>
+		<li>cookingingredient->Egg</li>
+		<li>cookingingredient->Mushroom</li>
+		<li>cookingingredient->Shrimp</li>
+		<li>cookingingredient->Crab</li>
+		<li>cookingingredient->Beans</li>
+		<li>cookingingredient->Tofu</li>
+		<li>cookingingredient->Insect</li>
+		<li>cookingingredient->Tempe</li>
+		<li>cookingingredient->Corn</li>
+		<li>cookingingredient->Sausage</li>
+		<li>cookingingredient->Potato</li>
+		<li>cookingingredient->Pork</li>
+		<li>cookingingredient->Beef</li>
+		<li>cookingingredient->Poultry</li>
+		<li>cookingingredient->Seafood</li>
+		<li>cookingingredient->Squid</li>
+		<li>cookingingredient->Octopus</li>
+		<li>cookingingredient->Fruit</li>
+		<li>cookingingredient->Taro</li>
+		<li>cookingingredient->Rice</li>
+		<li>cookingingredient->Oat</li>
+		<li>cookingingredient->Protein</li>
+		<li>cookingingredient->Carbohydrates</li>
+		<li>cookingingredient->Fats</li>
+		<li>cookingingredient->Vitamins</li>
+		
+		<li>cookingutensil->Spoon</li>
+		<li>cookingutensil->Fork</li>
+		<li>cookingutensil->Knife</li>
+		<li>cookingutensil->Rolling Pin</li>
+		<li>cookingutensil->Spork</li>
+		<li>cookingutensil->Whisk</li>
+		<li>cookingutensil->Breadknife</li>
+		<li>cookingutensil->Teaspoon</li>
+		
+		<li>cookingmethod->Fried</li>
+		<li>cookingmethod->Boiled</li>
+		<li>cookingmethod->Barbecued</li>
+		<li>cookingmethod->Sauteed</li>
+		<li>cookingmethod->Poached</li>
+		<li>cookingmethod->Braised</li>
+		<li>cookingmethod->Stir-Fried</li>
+		<li>cookingmethod->Baked</li>
+		<li>cookingmethod->Buttered</li>
+		<li>cookingmethod->Deep-Fried</li>
+		<li>cookingmethod->Fermented</li>
+		
+		<li>cookingstuff->[cookingmeal]</li>
+		<li>cookingstuff->[cookingutensil]</li>
+		<li>cookingstuff->[cookingmethod] [cookingingredient]</li>
+		
+		<!-- General -->
+		<li>r_art_name->[maybe_magazinenamefront] [magazinenamebehind]</li>
+		<li>r_art_name->[magazinenamefront] [maybe_magazinenamebehind]</li>
+		<li>r_art_name->[magazinenamefront] [cookingstuff]</li>
+		<li>r_art_name->[cookingstuff] [magazinenamebehind]</li>
+		<li>r_art_name->[magazinenamefront] Recipes</li>
+		<li>r_art_name->Tasty [magazinenamebehind]</li>
+		<li>r_art_name->Delicious [magazinenamebehind]</li>
+		<li>r_art_name->Gourmet [magazinenamebehind]</li>
+		<li>r_art_name->[cookingutensil] and [cookingutensil]</li>
+		<li>r_art_name->[cookingmeal] and [cookingmeal]</li>
+		<li>r_art_name->[AdjectiveAny] [cookingutensil]</li>
+		<li>r_art_name->[Color] [cookingutensil]</li>
+		<li>r_art_name->Chef's [cookingstuff]</li>
+		<li>r_art_name->[ANYPAWN_nameIndef]'s [cookingstuff]</li>
+		<li>r_art_name->[ANYPAWN_nameIndef]'s [maybe_magazinenamebehind]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterArtDescription_Comic</defName>
+	<include>
+	  <li>RimWriterNamerWrittenBase</li>
+	  <!--<li>RimWriterNameUtility</li>-->
+	  <li>RimWriterAddonNameUtility</li>
+	  <li>ArtDescriptionUtility_Global</li>
+	  <li>NamerFactionOutlander</li>
+	</include>
+    <rulePack>
+      <rulesStrings>
+        <li>comiclocpart->lair</li>
+		<li>comiclocpart->headquarters</li>
+		<li>comiclocpart->sanctum</li>
+		<li>comiclocpart->hideout</li>
+		<li>comiclocpart->abandoned warehouse</li>
+		
+		<li>comicloc->[Character]'s [comiclocpart]</li>
+		<li>comicloc->[wcomicgroupnames]'s [comiclocpart]</li>
+		<li>comicloc->evil [comiclocpart]</li>
+		
+		<li>comicchar->[Character]</li>
+		<li>comicchar->[comicheroname]</li>
+		<li>comicchar->[comicvillainname]</li>
+		
+		<li>comicheroname->captain [ConceptAny]</li>
+		<li>comicheroname->captain [PersonJob]</li>
+		<li>comicheroname->captain [Animal]</li>
+		<li>comicheroname->[ConceptAny]man</li>
+		<li>comicheroname->[Animal]man</li>
+		<li>comicheroname->[AdjectiveAny]man</li>
+		<li>comicheroname->[ConceptAny]boy</li>
+		<li>comicheroname->[Animal]boy</li>
+		<li>comicheroname->[AdjectiveAny]boy</li>
+		<li>comicheroname->[ConceptAny]woman</li>
+		<li>comicheroname->[Animal]woman</li>
+		<li>comicheroname->[AdjectiveAny]woman</li>
+		<li>comicheroname->[ConceptAny]girl</li>
+		<li>comicheroname->[Animal]girl</li>
+		<li>comicheroname->[AdjectiveAny]girl</li>
+		<li>comicheroname->[ConceptAny]-man</li>
+		<li>comicheroname->[Animal]-man</li>
+		<li>comicheroname->[AdjectiveAny]-man</li>
+		<li>comicheroname->[ConceptAny]-boy</li>
+		<li>comicheroname->[Animal]-boy</li>
+		<li>comicheroname->[AdjectiveAny]-boy</li>
+		<li>comicheroname->[ConceptAny]-woman</li>
+		<li>comicheroname->[Animal]-woman</li>
+		<li>comicheroname->[AdjectiveAny]-woman</li>
+		<li>comicheroname->[ConceptAny]-girl</li>
+		<li>comicheroname->[Animal]-girl</li>
+		<li>comicheroname->[AdjectiveAny]-girl</li>
+		<li>comicheroname->[Color] [Animal]</li>
+		
+		<li>adjectivevillainish->[AdjectiveBadass]</li>
+		<li>adjectivevillainish->[AdjectiveAngsty]</li>
+		
+		<li>comicvillainname->[Color] [Animal]</li>
+		<li>comicvillainname->[adjectivevillainish] [Animal]</li>
+		<li>comicvillainname->[adjectivevillainish] [ConceptAny]</li>
+		<li>comicvillainname->[adjectivevillainish]inator</li>
+		<li>comicvillainname->[adjectivevillainish] the [PersonJob]</li>
+		<li>comicvillainname->evil [comicheroname]</li>
+		<li>comicvillainname->[adjectivevillainish] the [Animal]</li>
+		<li>comicvillainname->[adjectivevillainish] [Animal]</li>
+		<li>comicvillainname->[ANYPAWN_nameIndef] the [PersonJob]</li>
+		<li>comicvillainname->[ANYPAWN_nameIndef] the [adjectivevillainish]</li>
+		<li>comicvillainname->doctor [Animal]</li>
+		<li>comicvillainname->doctor [adjectivevillainish]</li>
+		<li>comicvillainname->[Gore] [Animal]</li>
+		<li>comicvillainname->[Gore] [Gore]</li>
+		<li>comicvillainname->[adjectivevillainish] [Gore]</li>
+		<li>comicvillainname->baron [ConceptAny]</li>
+		<li>comicvillainname->baron [PersonJob]</li>
+		<li>comicvillainname->baron [Animal]</li>
+		
+		<li>comic_content->a [Character] who is discovering their [SuperPowers] powers</li>
+		<li>comic_content->[Character] who is an ordinary [PersonJob], discovering their [SuperPowers] powers</li>
+		<li>comic_content->[Character] who is an ordinary [PersonJob], discovering their [SuperPowers] powers and becoming [comicchar]</li>
+		<li>comic_content->a [Character] who discovered a secret group known as the [wcomicgroupnames]</li>
+		<li>comic_content->a [Character] who is confronting the mastermind of [wcomicgroupnames], [comicvillainname], in [maybe_the] [comicloc]</li>
+		<li>comic_content->a [Character] who aims to thwart [wcomicgroupnames] in their global domination</li>
+		<li>comic_content->a [Character] who is having a heartfelt talk with their [PersonFamily] about [TalkTopicAny]</li>
+		<li>comic_content->a [Character] who is having a heartfelt talk with their [PersonFamily] about being [comicchar]</li>
+		<li>comic_content->a [Character] who is having a heated debate with their [Enemy], [comicvillainname], about [TalkTopicAny]</li>
+		<li>comic_content->a [Character] who is having a heartfelt talk with their mentor about [TalkTopicAny]</li>
+		<li>comic_content->a [Character]'s mentor, [comicheroname], who sacrificed themselves to give [Character] the [SuperPowers] power</li>
+		
+		<li>comicdesc->[comic_clause].</li>
+		<li>comicdesc->[comicextra_clause]. [comic_clause].</li>
+		<li>comicdesc->[comic_clause]. [artconjunction] [comicextra_clause].</li>
+		
+		<li>comic_clause->the work is done in [maybe_adjective] [drawingstyle_adj] style</li>
+		<li>comic_clause->overall, the work's tone is [AdjectiveAny]</li>
+		<li>comic_clause->the work contains a disguised jab at [ANYPAWN_nameIndef]</li>
+		<li>comic_clause->the work contains a disguised jab at [r_name]</li>
+		<li>comic_clause->in the story, [comicchar] is a caricature of [ANYPAWN_nameIndef]</li>
+		<li>comic_clause->in the story, [comicchar] is a personification of [ConceptAny]</li>
+		<li>comic_clause->in the story, [comicloc] is drawn in a [maybe_adjective] [drawingstyle_adj] style</li>
+		<li>comic_clause->in the story, [comicloc] actually [symbolizes] [ConceptAny]</li>
+		<li>comic_clause->in the story, [comicloc] is described as [AdjectiveAny]</li>
+		<li>comic_clause->in the story, [comicchar] is described as "[AdjectiveAny]"</li>
+		<li>comic_clause->in the story, [comicchar]'s inner conflict is depicted as a [Animal]</li>
+		<li>comic_clause->in the story, [wcomicgroupnames] actually [symbolizes] [ConceptAny]</li>
+		<li>comic_clause->in the story, the villainous [wcomicgroupnames] is led by [comicvillainname]</li>
+		<li>comic_clause->in the story, the heroic [wcomicgroupnames] is led by [comicheroname]</li>
+		
+		<li>comicextra_clause->the hero, [comicheroname], is haunted by [comicchar]</li>
+		<li>comicextra_clause->the hero, [comicheroname], refuses to join forces with [comicvillainname]</li>
+		<li>comicextra_clause->the hero, [comicheroname], refuses to join [wcomicgroupnames]</li>
+		<li>comicextra_clause->the hero, [comicheroname], gladly join forces with [comicchar]</li>
+		<li>comicextra_clause->the hero, [comicheroname], gladly joins [wcomicgroupnames]</li>
+		<li>comicextra_clause->the hero, [comicheroname], reluctantly join forces with [comicchar]</li>
+		<li>comicextra_clause->the hero, [comicheroname], reluctantly joins [wcomicgroupnames]</li>
+		<li>comicextra_clause->the villain, [comicvillainname], is haunted by [comicchar]</li>
+		<li>comicextra_clause->the villain, [comicvillainname], refuses to join forces with [comicvillainname]</li>
+		<li>comicextra_clause->the villain, [comicvillainname], refuses to join [wcomicgroupnames]</li>
+		<li>comicextra_clause->the villain, [comicvillainname], gladly join forces with [comicchar]</li>
+		<li>comicextra_clause->the villain, [comicvillainname], gladly joins [wcomicgroupnames]</li>
+		<li>comicextra_clause->the villain, [comicvillainname], reluctantly join forces with [comicchar]</li>
+		<li>comicextra_clause->the villain, [comicvillainname], reluctantly joins [wcomicgroupnames]</li>
+		<li>comicextra_clause->the storyline is quite [AdjectiveAny]</li>
+		<li>comicextra_clause->there is a cameo by [ANYPAWN_nameIndef]</li>
+		<li>comicextra_clause->the comic has surprising amount of [ConceptAny]</li>
+		<li>comicextra_clause->the comic explores a deeper part of [ConceptAny]</li>
+		<li>comicextra_clause->the comic has a lengthy scene about [TalkTopicAny]</li>
+		<li>comicextra_clause->the concept of [ConceptAny] was mentioned at the beginning, but it was never touched upon again</li>
+		<li>comicextra_clause->the comic has too many plot twists to keep track of</li>
+		<li>comicextra_clause->the [ConceptAny] was actually a plot twist</li>
+		<li>comicextra_clause->the [comicchar] is a fan favorite</li>
+		<li>comicextra_clause->the [comicchar] tend to spark many flame wars between fans</li>
+		<li>comicextra_clause->the comic evokes a lot of [ConceptAny] imagery</li>
+		
+		<li>physical_description_root(p=500)->This [ComicTitle] [tells] [comic_content]. [comicdesc]</li>
+        <li>physical_description_root(p=500)->This [ComicTitle] [holds] a scene about [comic_content]. [comicdesc]</li>
+        <li>physical_description_root(p=500)->In this [ComicTitle], [comic_content]. [comicdesc]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterArtDescription_Hentai</defName>
+	<include>
+	  <li>RimWriterNamerWrittenBase</li>
+	  <!--<li>RimWriterNameUtility</li>-->
+	  <li>RimWriterAddonNameUtility</li>
+	  <li>ArtDescriptionUtility_Global</li>
+	</include>
+    <rulePack>
+      <rulesStrings>
+        <li>hentailoc->love hotel</li>
+		<li>hentailoc->shady alley</li>
+		<li>hentailoc->classroom</li>
+		<li>hentailoc->field</li>
+		<li>hentailoc->sex dungeon</li>
+		<li>hentailoc->teacher's lounge</li>
+		<li>hentailoc->office</li>
+		<li>hentailoc->bed</li>
+		<li>hentailoc->public toilet</li>
+		<li>hentailoc->park</li>
+		<li>hentailoc->secret laboratory</li>
+		<li>hentailoc->secret room</li>
+		<li>hentailoc->gym</li>
+		<li>hentailoc->hideout</li>
+		<li>hentailoc->empty house</li>
+		
+		<li>hentai_content->a [hentaichar] is having an affair with a [hentaichar]</li>
+		<li>hentai_content->a [hentaichar] is caught masturbating by a [hentaichar]</li>
+		<li>hentai_content->a [hentaichar] is [sexualacting] a [hentaichar]</li>
+		<li>hentai_content->a [hentaichar] is [sexualacting] a [hentaichar] right off the bat</li>
+		<li>hentai_content->a [hentaichar] is [sexualacting] a [hentaichar] in a [hentailoc]</li>
+		<li>hentai_content->a [hentaichar] was caught [sexualacting] a [hentaichar] in a [hentailoc]</li>
+		<li>hentai_content->a [hentaichar] was caught [sexualacting] a [hentaichar] in a [hentailoc] by a [hentaichar]</li>
+		<li>hentai_content->a [hentaichar] [witnessed] a [hentaichar] getting [sexualacted]  in a [hentailoc]</li>
+		<li>hentai_content->a [hentaichar] [witnessed] a [hentaichar] [sexualacting] a [hentaichar] in a [hentailoc]</li>
+		<li>hentai_content->a [hentaichar] is [sexualacting] [Quantity_adjphrase] [hentaichar] at once</li>
+		<li>hentai_content->a [hentaichar] is [sexualacting] for profit</li>
+		<li>hentai_content->a [hentaichar] is [sexualacting] a [hentaichar] repeatedly until they break</li>
+		<li>hentai_content->a [hentaichar] got stuck on a [SexPositions] position with a [hentaichar]</li>
+		<li>hentai_content->a [hentaichar] kept getting stuck on a [SexPositions] position with a [hentaichar]</li>
+		<li>hentai_content->a [hentaichar] [witnessed] a [hentaichar] getting [sexualacted] and got aroused</li>
+		
+		<li>hentaidesc->[hentai_clause].</li>
+		<li>hentaidesc->[hentaiextra_clause]. [hentai_clause].</li>
+		<li>hentaidesc->[hentai_clause]. [artconjunction] [hentaiextra_clause].</li>
+		
+		<li>hentai_clause->the work is done in [maybe_adjective] [drawingstyle_adj] style</li>
+		<li>hentai_clause->overall, the work's tone is very "[AdjectiveAny]"</li>
+		
+		<li>hentaiextra_clause->it starts with the [hentaichar] in [SexPositions]</li>
+		<li>hentaiextra_clause->it starts with the [hentaichar] in a [SexAct]</li>
+		<li>hentaiextra_clause->it starts with a [AdjectiveAny] note</li>
+		<li>hentaiextra_clause->it starts with a [maybe_lewdadjective] [SexPositions] position</li>
+		<li>hentaiextra_clause->it ends with the [hentaichar] in [SexPositions]</li>
+		<li>hentaiextra_clause->it ends when the [hentaichar] climaxes during [SexAct]</li>
+		<li>hentaiextra_clause->it ends on a [AdjectiveAny] note</li>
+		<li>hentaiextra_clause->it ends with a [maybe_lewdadjective] [SexPositions]</li>
+		<li>hentaiextra_clause->it is revealed that the [hentaichar] had a [Fetishes] fetish</li>
+		<li>hentaiextra_clause->it is revealed that the [hentaichar] had turned [sexualorientation]</li>
+		
+		<li>physical_description_root(p=500)->This Hentai book [tells] [hentai_content]. [hentaidesc] [maybe_sextags]</li>
+        <li>physical_description_root(p=500)->This Hentai book [holds] a scene where [hentai_content]. [hentaidesc] [maybe_sextags]</li>
+        <li>physical_description_root(p=500)->In this Hentai book, [hentai_content]. [hentaidesc] [maybe_sextags]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterArtDescription_Fantasy</defName>
+	<include>
+	  <li>RimWriterNamerWrittenBase</li>
+	  <!--<li>RimWriterNameUtility</li>-->
+	  <li>RimWriterAddonNameUtility</li>
+	  <li>ArtDescriptionUtility_Global</li>
+	  <li>NamerFactionOutlander</li>
+	</include>
+    <rulePack>
+      <rulesStrings>
+		
+		<li>fantasyenemy->dragon</li>
+		<li>fantasyenemy->lich</li>
+		<li>fantasyenemy->hydra</li>
+		<li>fantasyenemy->sphinx</li>
+		<li>fantasyenemy->terrible horror</li>
+		<li>fantasyenemy->demon lord</li>
+		<li>fantasyenemy->vampire lord</li>
+		<li>fantasyenemy->demon [fantasyclass]</li>
+		<li>fantasyenemy->crazed [fantasyclass]</li>
+		<li>fantasyenemy->corrupted [fantasyclass]</li>
+		<li>fantasyenemy->warband of orcs</li>
+		<li>fantasyenemy->tribe of kobolds</li>
+		<li>fantasyenemy->gang of goblins</li>
+		<li>fantasyenemy->gaggle of harpies</li>
+		<li>fantasyenemy->group of undead</li>
+		
+		<li>fantasychar->[maybe_fantasyadj] [fantasyenemy]</li>
+		<li>fantasychar->[maybe_fantasyadj] [fantasyclass]</li>
+		
+		<li>fantasyparty->[fantasyclass] and a [fantasyclass]</li>
+		<li>fantasyparty->[fantasyclass], [fantasyclass] and a [fantasyclass]</li>
+		<li>fantasyparty->[fantasyclass], [fantasyclass], [fantasyclass] and a [fantasyclass]</li>
+		
+		<li>fantasy_content->a [fantasyclass], who got into trouble</li>
+		<li>fantasy_content->a [fantasyclass], who got into an adventure</li>
+		<li>fantasy_content->a [fantasyclass], who can transform into an [Animal]</li>
+		<li>fantasy_content->a [fantasyclass], who can transform into an [Animal] due to a curse</li>
+		<li>fantasy_content->a [fantasyclass], who came upon the [macguffin]</li>
+		<li>fantasy_content->a [fantasyclass], who came upon the [macguffin] and must go to [either_a_or_the] [fantasyloc] to deliver it</li>
+		<li>fantasy_content->a [fantasyclass], who came upon the [macguffin] and must go to [either_a_or_the] [fantasyloc] to destroy it</li>
+		<li>fantasy_content->a [fantasyclass], who awoke in the middle of [fantasyloc] with no memory of their past</li>
+		<li>fantasy_content->a [fantasyclass], who seeks revenge against the [fantasyenemy] who killed their [PersonFamily]</li>
+		<li>fantasy_content->a [fantasyclass], who seeks revenge against the [fantasyenemy] who robbed them blind</li>
+		<li>fantasy_content->a [fantasyclass], who seeks justice against the [fantasyenemy] for their crimes</li>
+		<li>fantasy_content->a [fantasyclass], who is tasked to look for the [macguffin]</li>
+		<li>fantasy_content->a [fantasyclass], who is tasked to hunt for a [fantasyenemy]</li>
+		<li>fantasy_content->a [fantasyclass], who is imprisoned at [either_a_or_the] [fantasyloc] and must escape</li>
+		<li>fantasy_content->a [fantasyclass], who is imprisoned at [either_a_or_the] [fantasyloc] and must find the [macguffin] to regain their freedom</li>
+		<li>fantasy_content->a [fantasyclass], who must infiltrate [either_a_or_the] [fantasyloc] unnoticed</li>
+		<li>fantasy_content->a [fantasyclass], who meets a [fantasyparty] in an inn and formed an adventuring party</li>
+		
+		<li>fantasydesc->[fantasy_clause].</li>
+		<li>fantasydesc->[fantasyextra_clause]. [fantasy_clause].</li>
+		<li>fantasydesc->[fantasy_clause]. [artconjunction] [fantasyextra_clause].</li>
+		
+		<li>fantasy_clause->the work is done in [maybe_adjective] [writingstyle_adj] style</li>
+		<li>fantasy_clause->overall, the work's tone is [AdjectiveAny]</li>
+		<li>fantasy_clause->the work contains a disguised jab at [ANYPAWN_nameIndef]</li>
+		<li>fantasy_clause->the work contains a disguised jab at [r_name]</li>
+		<li>fantasy_clause->in the story, the [fantasychar] is a caricature of [ANYPAWN_nameIndef]</li>
+		<li>fantasy_clause->in the story, the [fantasychar] is a personification of [ConceptAny]</li>
+		<li>fantasy_clause->in the story, the [fantasychar] is described as "[AdjectiveAny]"</li>
+		
+		<li>fantasyextra_clause->the storyline is quite [AdjectiveAny]</li>
+		<li>fantasyextra_clause->there is a cameo by [ANYPAWN_nameIndef]</li>
+		<li>fantasyextra_clause->the book has surprising amount of [ConceptAny]</li>
+		<li>fantasyextra_clause->the book has a lengthy scene about [TalkTopicAny]</li>
+		<li>fantasyextra_clause->the concept of [ConceptAny] was mentioned at the beginning, but it was never touched upon again</li>
+		<li>fantasyextra_clause->the [ConceptAny] was actually a plot twist</li>
+		<li>fantasyextra_clause->the [Character], a [fantasyclass], is a fan favorite</li>
+		<li>fantasyextra_clause->the book evokes a lot of [ConceptAny] imagery</li>
+		<li>fantasyextra_clause->there is a thrilling moment when the [fantasyclass] fights a [fantasyenemy]</li>
+		<li>fantasyextra_clause->there is a thrilling moment when the [fantasyclass] confronts a [fantasyenemy]</li>
+		<li>fantasyextra_clause->there is a thrilling moment when the [fantasyclass] dodges a trap at [either_a_or_the] [fantasyloc]</li>
+		<li>fantasyextra_clause->there is a thrilling moment when the [fantasyclass] escapes from [either_a_or_the] [fantasyloc]</li>
+		
+		<li>physical_description_root(p=500)->This book [tells] [fantasy_content]. [fantasydesc]</li>
+        <li>physical_description_root(p=500)->This book [holds] a scene about [fantasy_content]. [fantasydesc]</li>
+        <li>physical_description_root(p=500)->In this book, [fantasy_content]. [fantasydesc]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterArtDescription_Mystery</defName>
+	<include>
+	  <li>RimWriterNamerWrittenBase</li>
+	  <!--<li>RimWriterNameUtility</li>-->
+	  <li>RimWriterAddonNameUtility</li>
+	  <li>ArtDescriptionUtility_Global</li>
+	  <li>NamerFactionOutlander</li>
+	</include>
+    <rulePack>
+      <rulesStrings>
+		
+		<li>mysterysuspect->[Animal]</li>
+		<li>mysterysuspect->[PersonFamily]</li>
+		<li>mysterysuspect->[PersonJob]</li>
+		<li>mysterysuspect->spy</li>
+		<li>mysterysuspect->butler</li>
+		<li>mysterysuspect->janitor</li>
+		<li>mysterysuspect->serial killer</li>
+		<li>mysterysuspect->criminal</li>
+		<li>mysterysuspect->lunatic</li>
+		<li>mysterysuspect->escaped convict</li>
+		<li>mysterysuspect->villain</li>
+		<li>mysterysuspect->[Character]</li>
+		<!--<li>mysterysuspect->old man Jenkins</li>--> <!-- scooby doo much? -->
+		
+		<li>mysterydisguise->[Animal]</li>
+		<li>mysterydisguise->[PersonFamily]</li>
+		<li>mysterydisguise->[PersonJob]</li>
+		<li>mysterydisguise->butler</li>
+		<li>mysterydisguise->janitor</li>
+		<li>mysterydisguise->maid</li>
+		<li>mysterydisguise->maintenance personnel</li>
+		<li>mysterydisguise->farmhand</li>
+		<li>mysterydisguise->hired help</li>
+		<li>mysterydisguise->ghost</li>
+		<li>mysterydisguise->monster</li>
+		<li>mysterydisguise->old man</li>
+		<li>mysterydisguise->old woman</li>
+		<li>mysterydisguise->bush</li>
+		<li>mysterydisguise->tree</li>
+		<li>mysterydisguise->statue</li>
+		<li>mysterydisguise->painting</li>
+		<li>mysterydisguise->robot</li>
+		
+		<li>mystery_content->a [Character], who is uncovering a conspiracy at a [mysterysetting]</li>
+		<li>mystery_content->a conspiracy that is being discovered by a [Character]</li>
+		<li>mystery_content->a [Character] has to figure out a murder at a [mysterysetting]</li>
+		<li>mystery_content->a [Character] has to figure out a theft at a [mysterysetting]</li>
+		<li>mystery_content->a [Character] who was visiting a [mysterysetting] when a murder happened</li>
+		<li>mystery_content->a [Character] who was visiting a [mysterysetting] when a theft happened</li>
+		<li>mystery_content->a [Character] who was visiting a [mysterysetting] when a drive-by happened</li>
+		<li>mystery_content->a [Character] who was implicated in a murder after finding a [mysteryclue]</li>
+		<li>mystery_content->a [Character] who was implicated in a murder after finding a [mysteryweapon]</li>
+		<li>mystery_content->a [Character] who was implicated in a theft after finding a [mysteryclue]</li>
+		<li>mystery_content->a [Character] who was implicated in a theft after finding a [mysteryweapon]</li>
+		<li>mystery_content->a [Character] who was implicated in a heist after finding a [mysteryclue]</li>
+		<li>mystery_content->a [Character] who was implicated in a heist after finding a [mysteryweapon]</li>
+		<li>mystery_content->a [Character] who was implicated in a murder</li>
+		<li>mystery_content->a [Character] who was implicated in a theft</li>
+		<li>mystery_content->a [Character] who was implicated in a heist</li>
+		<li>mystery_content->a [Character] who was implicated in a conspiracy</li>
+		
+		<li>mysterydesc->[mystery_clause].</li>
+		<li>mysterydesc->[mysteryextra_clause]. [mystery_clause].</li>
+		<li>mysterydesc->[mystery_clause]. [artconjunction] [mysteryextra_clause].</li>
+		
+		<li>mystery_clause->the work is done in [maybe_adjective] [writingstyle_adj] style</li>
+		<li>mystery_clause->overall, the work's tone is [AdjectiveAny]</li>
+		<li>mystery_clause->the work contains a disguised jab at [ANYPAWN_nameIndef]</li>
+		<li>mystery_clause->the work contains a disguised jab at [r_name]</li>
+		<li>mystery_clause->in the story, the [Character] is a caricature of [ANYPAWN_nameIndef]</li>
+		<li>mystery_clause->in the story, the [Character] is a personification of [ConceptAny]</li>
+		<li>mystery_clause->in the story, the [Character] is described as "[AdjectiveAny]"</li>
+		
+		<li>mysteryextra_clause->the storyline is quite [AdjectiveAny]</li>
+		<li>mysteryextra_clause->there is a cameo by [ANYPAWN_nameIndef]</li>
+		<li>mysteryextra_clause->the book has surprising amount of [ConceptAny]</li>
+		<li>mysteryextra_clause->the book has a lengthy scene about [TalkTopicAny]</li>
+		<li>mysteryextra_clause->the concept of [ConceptAny] was mentioned at the beginning, but it was never touched upon again</li>
+		<li>mysteryextra_clause->the [ConceptAny] was actually a plot twist</li>
+		<li>mysteryextra_clause->the [Character] is a fan favorite</li>
+		<li>mysteryextra_clause->the book evokes a lot of [ConceptAny] imagery</li>
+		<li>mysteryextra_clause->the culprit is actually the [mysterysuspect], who left a [mysteryclue] at the [mysterysetting]</li>
+		<li>mysteryextra_clause->the culprit is actually the [mysterysuspect], who is secretly the [PersonFamily] of the protagonist</li>
+		<li>mysteryextra_clause->the culprit is actually the [mysterysuspect], who is secretly the [PersonFamily] of the victim</li>
+		<li>mysteryextra_clause->the culprit is actually the [mysterysuspect], who is secretly the [PersonFamily] of the [Character]</li>
+		<li>mysteryextra_clause->the culprit is actually the [mysterysuspect], who had to disguise as a [mysterydisguise]</li>
+		<li>mysteryextra_clause->the culprit is actually the [mysterysuspect], who had to hide in the [mysteryroom]</li>
+		<li>mysteryextra_clause->the culprit is actually the [mysterysuspect], who left a [mysteryclue] on the [mysteryweapon] used in the crime</li>
+		<li>mysteryextra_clause->the culprit is actually the [mysterysuspect], who covered their tracks well, but whose alibi was found to be dubious</li>
+		<li>mysteryextra_clause->the culprit is actually the [mysterysuspect], whose alibi was airtight, except for the single [mysteryclue] they left behind</li>
+		<li>mysteryextra_clause->the pivotal moment in the book was the uncovering of the [mysterysuspect] as the true culprit</li>
+		<li>mysteryextra_clause->the pivotal moment in the book was the discovery of the [mysteryclue] in the [mysteryroom]</li>
+		<li>mysteryextra_clause->the pivotal moment in the book was the discovery of the [mysteryweapon] in the [mysteryroom]</li>
+		<li>mysteryextra_clause->the pivotal moment in the book was the discovery of a body in the [mysteryroom]</li>
+		<li>mysteryextra_clause->there is a thrilling moment when the [Character] figures out the culprit</li>
+		<li>mysteryextra_clause->there is a thrilling moment when the [Character] figures out the true culprit</li>
+		<li>mysteryextra_clause->there is a thrilling moment when the [Character] figures out where the missing [mysteryweapon] went</li>
+		<li>mysteryextra_clause->there is a thrilling moment when the [Character] figures out where the missing [mysteryclue] went</li>
+		<li>mysteryextra_clause->there is a thrilling moment when the [Character] was almost killed by the [mysterysuspect] while looking for the [mysteryclue] in the [mysteryroom]</li>
+		<li>mysteryextra_clause->there is a thrilling moment when the [Character] had to defend themselves against an unknown attacker using a [mysteryweapon]</li>
+		<li>mysteryextra_clause->there is a thrilling moment when the [Character] had to defend themselves against the [mysterysuspect] using a [mysteryweapon]</li>
+		<li>mysteryextra_clause->the suspicious [mysterysuspect] is actually not the culprit, it was actually the [mysterysuspect]</li>
+		<li>mysteryextra_clause->turns out [mysterysuspect] is not who they say they are</li>
+		
+		<li>physical_description_root(p=500)->This book [tells] [mystery_content]. [mysterydesc]</li>
+        <li>physical_description_root(p=500)->This book [holds] a scene about [mystery_content]. [mysterydesc]</li>
+        <li>physical_description_root(p=500)->In this book, [mystery_content]. [mysterydesc]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>RimWriterArtDescription_Eldritch</defName>
+	<include>
+	  <li>RimWriterNamerWrittenBase</li>
+	  <!--<li>RimWriterNameUtility</li>-->
+	  <li>RimWriterAddonNameUtility</li>
+	  <li>ArtDescriptionUtility_Global</li>
+	  <li>NamerFactionOutlander</li>
+	</include>
+    <rulePack>
+      <rulesStrings>
+		
+		<li>eldritchphenomenon->bringing about the end of the world</li>
+		<li>eldritchphenomenon->delivering us eternal salvation</li>
+		<li>eldritchphenomenon->cleansing the world in purifying flame</li>
+		<li>eldritchphenomenon->bringing about a new age of savagery</li>
+		<li>eldritchphenomenon->destroying all of mankind</li>
+		<li>eldritchphenomenon->bringing the rapture of mankind</li>
+		<li>eldritchphenomenon->manifesting hell on earth</li>
+		<li>eldritchphenomenon->tearing the very fabric of reality asunder</li>
+		<li>eldritchphenomenon->erasing reality itself</li>
+		<li>eldritchphenomenon->erasing humanity from the timeline</li>
+		<li>eldritchphenomenon->subjugating humanity as its slave-race</li>
+		<li>eldritchphenomenon->waking up and dissipate the dream that is reality we know</li>
+		<li>eldritchphenomenon->arriving in a flash of a thousand suns</li>
+		<li>eldritchphenomenon->returning this universe into the true vaccuum</li>
+		<li>eldritchphenomenon->bringing about the age of unreason</li>
+		
+		<li>eldritch_content->a nonsense rambling about the coming of the [eldritchadj] [eldritchgodtype] [eldritchgodname] who will be [eldritchphenomenon]</li>
+		<li>eldritch_content->a fevered ranting about the coming of the [eldritchadj] [eldritchgodtype] [eldritchgodname] who will be [eldritchphenomenon]</li>
+		<li>eldritch_content->the details of the time when [eldritchgodtype] [eldritchgodname] will be [eldritchphenomenon]</li>
+		<li>eldritch_content->a lost tome written in a [eldritchadj] script, that conveys about the greatness of the [eldritchadj] [eldritchgodtype] [eldritchgodname]</li>
+		<li>eldritch_content->a personal journal of a deceased [PersonJob], who unfortunately had personally [witnessed] a cult of [eldritchgodname]</li>
+		<li>eldritch_content->a personal journal of a deceased [PersonJob], who unfortunately had personally [witnessed] the terrible visage of [eldritchgodname]</li>
+		<li>eldritch_content->a personal journal of a deceased [PersonJob], who unfortunately had terrible visions of [eldritchgodname] [eldritchphenomenon]</li>
+		
+		<li>eldritchdesc->[eldritch_clause].</li>
+		<li>eldritchdesc->[eldritchextra_clause]. [eldritch_clause].</li>
+		<li>eldritchdesc->[eldritch_clause]. [artconjunction] [eldritchextra_clause].</li>
+		
+		<li>eldritch_clause->the work is done in [maybe_adjective] [writingstyle_adj] style</li>
+		<li>eldritch_clause->overall, the work's tone is [AdjectiveAny]</li>
+		
+		<li>eldritchextra_clause->the book has surprising amount of [ConceptAny]</li>
+		<li>eldritchextra_clause->the book evokes a lot of [eldritchadj] imagery</li>
+		<li>eldritchextra_clause->the book specifically mentions [ANYPAWN_nameIndef] as a vile heretic</li>
+		<li>eldritchextra_clause->the book specifically mentions [ANYPAWN_nameIndef] as a chosen one</li>
+		<li>eldritchextra_clause->the book specifically mentions [ANYPAWN_nameIndef] as a suitable sacrifice</li>
+		<li>eldritchextra_clause->the book contains a [eldritchadj] sign: the [Character]</li>
+		<li>eldritchextra_clause->the book contains a [Animal] as a [eldritchadj] sign</li>
+		<li>eldritchextra_clause->the book contains a [Vegetable] as a [eldritchadj] sign</li>
+		<li>eldritchextra_clause->the book contains a malformed [Shape] as a [eldritchadj] sign</li>
+		<li>eldritchextra_clause->the book contains a [Weapon] as a [eldritchadj] sign</li>
+		<li>eldritchextra_clause->the book contains a [Animal] as a [eldritchadj] sign that signals the time when [eldritchgodname] will be [eldritchphenomenon]</li>
+		
+		<li>eldritchmantra->[EldritchWordPieces][EldritchWordPieces][EldritchWordPieces][EldritchWordPieces][EldritchWordPieces]</li>
+		<li>eldritchmantra->[EldritchWordPieces][EldritchWordPieces][EldritchWordPieces][EldritchWordPieces]</li>
+		<li>eldritchmantra->[EldritchWordPieces][EldritchWordPieces][EldritchWordPieces]</li>
+		<li>eldritchmantra->[EldritchWordPieces][EldritchWordPieces]</li>
+		
+		<li>eldritchexcerpt->[eldritchgodname] lives! They will be [eldritchphenomenon] when the time of the [Animal] is right</li>
+		<li>eldritchexcerpt->they lie, saying that [eldritchgodname] can be defeated</li>
+		<li>eldritchexcerpt->to bring about the coming of [eldritchgodname], you shall speak the mantra when the time is right: [eldritchmantra]</li>
+		<li>eldritchexcerpt->[eldritchmantra] [eldritchmantra]</li>
+		<li>eldritchexcerpt->and when [eldritchgodname] speaks to us: "[eldritchmantra]", it is time</li>
+		
+		<li>physical_description_root(p=500)->This book [tells] [eldritch_content]. [eldritchdesc] An excerpt: "...[eldritchexcerpt]..."</li>
+        <li>physical_description_root(p=500)->In this book, [eldritch_content]. [eldritchdesc] An excerpt: "...[eldritchexcerpt]..."</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  
+</Defs>
